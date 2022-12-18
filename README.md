@@ -50,6 +50,6 @@ Logged in users can:
 
 •	View their posts history
 
-•	View the their profile page 
+•	View their profile page 
 
 
