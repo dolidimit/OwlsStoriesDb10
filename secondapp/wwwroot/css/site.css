@@ -1,0 +1,4833 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Aleo:wght@300;400&family=Almendra&family=Anonymous+Pro&family=Bad+Script&family=Baskervville&family=Charm:wght@400;700&family=Comfortaa:wght@300;400;500&family=Cormorant+Garamond:wght@300;400;500&family=Courgette&family=Flamenco:wght@300;400&family=Henny+Penny&family=IBM+Plex+Serif:wght@100;200;300;400;500&family=Italianno&family=League+Script&family=Marcellus&family=Mate+SC&family=Nanum+Myeongjo:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Parisienne&family=Petit+Formal+Script&family=Playfair+Display:wght@500&family=Prata&family=Tenor+Sans&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+* {
+    scroll-behavior: smooth;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.owltop img {
+    position: fixed;
+    width: 95px;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.fa-x {
+    background-color: rgba(255,255,255,0.20);
+    color: #000;
+    font-size: 35px;
+    cursor: pointer;
+    margin-right: 250px;
+    border-radius: 50%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #000;
+}
+
+
+
+
+    .btndowlabook:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .fa-x:hover {
+        background-color: #000;
+        color: #fff;
+    }
+    .fa-angle-up {
+        position: fixed;
+        background-color: rgba(0,0,0,0.20);
+        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
+        color: #fff;
+        font-size: 45px;
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .fa-angle-up:hover {
+        background-color: #000;
+    }
+
+
+    .navbar a {
+        font-size: 30px;
+        margin-top: 13px;
+        margin-right: 28px;
+    }
+
+
+body > header > nav > div > div > ul.navbar-nav.flex-grow-1 {
+    margin-top: 0px;
+}
+
+.navbar a:hover {
+    border-bottom: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.navbar .navbar-nav {
+        margin-left: -760px;
+}
+
+.section1 {
+    /*background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("https://static01.nyt.com/images/2021/01/29/books/00FEBRUARY-BOOKS-COMBO/00FEBRUARY-BOOKS-COMBO-superJumbo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255,0.1), rgba(255, 255, 255, 0.1)), url("/images/2cd43b_4649bce7dad04d89b63ba2c8e6233511_mv2_d_2167_1984_s_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(255, 254, 254);
+    height: 1720px;
+    width: 3044.5px;
+    margin-top: -30px;
+    margin-left: -970px;
+    margin-bottom:-14px;
+    scroll-behavior: smooth;
+}
+
+
+aside a {
+    font-size: 55px;
+    margin-top: 15px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+aside {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 85px;
+    border-radius: 15px;
+    border: 0.1px solid rgba(0, 0, 0, 0.333);
+    background-color: #fff;
+    margin-top: 290px;
+    margin-left: -960px;
+    padding-bottom: 20px;
+    position: fixed;
+}
+
+    aside .fa-heart {
+        width: 58px;
+        color: #000;
+        font-size: 50px;
+    }
+
+    aside .fa-book {
+        width: 58px;
+        font-size: 55px;
+        color: #000;
+    }
+
+    aside .fa-pen-fancy {
+        width: 58px;
+        font-size: 55px;
+        color: #000;
+    }
+
+    aside .fa-note-sticky {
+        width: 58px;
+        font-size: 55px;
+        color: #000;
+    }
+
+    aside .fa-comment {
+        width: 58px;
+        font-size: 55px;
+        color: #000;
+    }
+    /* aside .fa-solid {
+        width: 58px;
+        color: #000;
+    }
+
+.fa-solid {
+    font-size: 55px;
+    color: #000;
+}*/
+    .usersbtn {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+.section1 hr {
+    border: 0.01px solid #000;
+    margin-top: 150px;
+}
+
+.section1 .artthead {
+        /* position: absolute; */
+        /* background-color: rgba(255, 255, 255, 0.812); */
+        border: 0.1px solid rgba(0, 0, 0, 0.333);
+        color: rgb(0, 0, 0);
+        border-radius: 20px;
+        width: 505px;
+        font-size: 32px;
+        padding: -10px;
+        text-align: center;
+        margin-top: -900px;
+        margin-left: 48px;
+}
+
+.section1 .arttext {
+        /* position: absolute; */
+        background-color: rgba(255, 255, 255, 0.929);
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.793), rgba(255, 255, 255, 0.723)), url("/images/2cd43b_8aa164904e794d6398c000106ec4e29f_mv2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 0.1px solid rgba(0, 0, 0, 0.333);
+        color: rgb(0, 0, 0);
+        border-radius: 20px;
+        width: 745px;
+        height:1300px;
+        font-size: 33px;
+        padding: 70px;
+        margin-top: -120px;
+        margin-left: 160px;
+        padding-bottom:80px;
+}
+
+
+
+
+    .section1 .arttext p {
+        margin-top: 15px;
+        text-align: left;
+        padding-bottom: 10px;
+    }
+
+.section1 .arttext h1 {
+            font-size: 52px;
+            width: 800px;
+            margin-left: -80px;
+            padding-bottom: 20px;
+}
+
+    .section1 .arttext h2 {
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+
+
+
+
+.section1 .arttext2 {
+    /* position: absolute; */
+    background-color: rgba(255, 255, 255, 0.919);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 2)), url("/images/2cd43b_8aa164904e794d6398c000106ec4e29f_mv2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0.1px solid rgba(0, 0, 0, 0.333);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    width: 1700px;
+    font-size: 35px;
+    padding: 35px;
+    margin-top: -472px;
+    margin-left: 1100px;
+    text-align: center;
+}
+
+.section1 .bookarti {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* position: absolute; */
+}
+
+.section1 .bookarti img {
+            width: 1820px;
+            height: 980px;
+            margin-top: 10px;
+            margin-left: 1060px;
+}
+
+/*.form-control .col-md-4 .searform {
+    background-color: #fff;
+    border: 0.1px solid rgba(0, 0, 0, 0.333);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    width: 745px;
+    font-size: 33px;
+    margin-left:300px;
+}
+
+    .form-control .col-md-4 .searform input {
+        margin-left:200px;
+    }*/
+
+    .section1 .bookarti2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* position: absolute; */
+        border-bottom: rgba(0, 0, 0, 0.938);
+    }
+
+.section1 .bookarti2 img {
+            width: 280px;
+            height: 280px;
+            margin-top: 200px;
+            margin-left: 930px;
+}
+
+.section1 .bookarti2 .btndet {
+            width: 110px;
+            height: 52px;
+            background-color: #000;
+            border: 1px solid #000;
+            border-radius: 25px;
+            font-size: 23px;
+            cursor: pointer;
+            color: #fff;
+            font-weight: 600;
+            font-family: 'Nanum Myeongjo', serif;
+            padding-top: 0px;
+            margin-top: 40px;
+            margin-left: 1005px;
+}
+
+    .section1 .bookarti2 .btndet:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+.section1 .bookarti3 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        /*position: static;*/
+        /* position: relative; */
+}
+
+.section1 .bookarti3 img {
+            width: 95px;
+            height: 200px;
+            margin-top:  -230px;
+            margin-left: 130px;
+             position: static;
+            -webkit-transform: rotate(330deg);
+            -moz-transform: rotate(330deg);
+            -o-transform: rotate(330deg);
+            -ms-transform: rotate(330deg);
+            transform: rotate(330deg);
+
+}
+
+.section1 .bookarti3 .btndet {
+            width: 110px;
+            height: 52px;
+            background-color: #eae9bdf0;
+            border: 1px solid #dfdeb39b;
+            border-radius: 25px;
+            font-size: 23px;
+            cursor: pointer;
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+            font-family: 'Nanum Myeongjo', serif;
+            padding-top: 0px;
+            margin-top: 40px;
+            margin-left: 2145px;
+}
+
+.section1 .bookarti3 .btndet:hover {
+                background-color: #d0cfa9;
+}
+
+.section1 h1,h2,h3,h4,h5,h6 {
+    text-align:center;
+}
+
+
+.section1 .bookarti .btndet {
+        width: 110px;
+        height: 52px;
+        background-color: #eae9bdf0;
+        border: 1px solid #dfdeb39b;
+        border-radius: 25px;
+        font-size: 23px;
+        cursor: pointer;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+        font-family: 'Nanum Myeongjo', serif;
+        padding-top: 0px;
+        margin-top: 40px;
+        margin-left: 315px;
+}
+
+.section1 .bookarti .btndet:hover {
+            background-color: #d0cfa9;
+}
+
+
+.navbar {
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 110px;
+    border: 1px solid #ffffff;
+    background-color: #ffffffea;
+    font-family: 'Nanum Myeongjo', serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: -1px 9px 19px -5px rgba(211, 211, 211, 0.652);
+    color: hsl(0, 0%, 0%);
+    width: 3018px;
+    top: 0px;
+    margin-left: 10px;
+    position: fixed;
+    justify-content: left;
+}
+
+
+    .navbar .fvourite {
+        margin-top: 18px;
+    }
+
+.fa-cart-shopping {
+    font-size: 37px;
+    margin-left: 425px;
+}
+
+
+.bookaff {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.btnslistn {
+    margin-top: -81px;
+    margin-left: 2610px;
+}
+
+
+
+.navbar .owltop img {
+    position: fixed;
+    width: 95px;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.navbar .btnslistn .btnsign {
+    width: 150px;
+    height: 60px;
+    background-color: #000;
+    border: 1px solid #000;
+    box-shadow: -1px 9px 19px -5px rgba(24, 23, 23, 0.09);
+    border-radius: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-family: 'Nanum Myeongjo', serif;
+    padding-top: 3px;
+}
+
+.navbar .btnslistn .btnsign:hover {
+        background-color: rgba(0, 0, 0, 0.766);
+}
+
+.navbar .btnslistn .btnlog {
+    width: 150px;
+    height: 60px;
+    background-color: transparent;
+    border: 1px solid #000;
+    box-shadow: -1px 9px 19px -5px rgba(24, 23, 23, 0.09);
+    border-radius: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-family: 'Nanum Myeongjo', serif;
+    padding-top: 3px;
+    padding-right: 7px;
+    margin-left: 15px;
+}
+
+.navbar .btnslistn .btnlog:hover {
+        background-color: rgba(155, 154, 154, 0.056);
+}
+
+.navlist {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    text-decoration: none;
+    font-size: 30px;
+    list-style: none;
+    margin-left: 120px;
+    font-weight: 600;
+    font-family: 'Nanum Myeongjo', serif;
+    margin-top: -55px;
+}
+
+.navlist li {
+        margin-left: 60px;
+}
+
+.navlist li:hover  {
+    color: #fff;
+            border-bottom: 1px solid rgb(0, 0, 0);
+            cursor: pointer;
+}
+
+.fa-solid {
+
+}
+
+.booklogo img {
+    margin-left: -890px;
+    margin-top: -8px;
+    padding-top: 20px;
+    width: 70px;
+}
+
+
+
+.bubble {
+    /* position: relative; */
+    font-family: sans-serif;
+    font-size: 25px;
+    line-height: 40px;
+    width: 350px;
+    height: 190px;
+    background: rgba(255, 255, 255, 0.945);
+    box-shadow: -1px 9px 19px -5px rgba(24, 23, 23, 0.09);
+    border: 0.5px solid rgba(0, 0, 0, 0.181);
+    border-radius: 40px;
+    padding: 24px;
+    text-align: center;
+    color: #000;
+    font-family: 'Nanum Myeongjo', serif;
+    margin-left: 2650px;
+    margin-top: -930px;
+}
+
+.bubble-bottom-left:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 22px solid rgba(255, 255, 255, 0.945);
+    border-right: 12px solid transparent;
+    /* border-top: 0.5px solid rgba(0, 0, 0, 0.859); */
+    border-bottom: 20px solid transparent;
+    left: 32px;
+    bottom: -24px;
+}
+
+
+
+.sec2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
+    margin-top: 230px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.150), rgba(255, 255, 255, 0.150)),url("https://img.freepik.com/premium-photo/green-floating-leaves-flying-leaves-green-leaf-dancing-air-purifier-atmosphere-simple-main-picture_36051-737.jpg?w=2000");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 3050px;
+    height: 1850px;
+    margin-left: -985px;
+    margin-bottom: 280px;
+}
+
+.titlepost {
+    margin-top: 30px;
+    background-color: rgb(255,255,255,0.99);
+    border-radius: 15px;
+    padding: 15px;
+    height: 70px;
+}
+
+.wraplink {
+    text-decoration: none;
+    color: #000;
+}
+
+    .wraplink:hover {
+        text-decoration: none;
+        color: #000;
+    }
+
+.sec2ht {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-image: url('/images/2cd43b_8aa164904e794d6398c000106ec4e29f_mv2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -170px;
+    width: 2092px;
+    height: 890px;
+    /* height: 1750px;*/
+    /*margin-left: -940px;*/
+}
+
+
+     .artmains2ht {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 60px;
+        width: 2300px;
+    }
+
+
+    .sec2ht .contentpage {
+        text-align: center;
+        width: 320px;
+        height: 480px;
+        box-shadow: -1px 9px 19px -5px rgba(24, 23, 23, 0.568);
+        background-color: #ffffff;
+        border: 0.5px solid rgb(255, 255, 255);
+        border-radius: 20px;
+        font-family: 'Nanum Myeongjo', serif;
+        text-align: center;
+        margin-top: 120px;
+        margin-bottom: 30px;
+        cursor: pointer;
+    }
+
+        .sec2ht .contentpage:hover {
+            background: rgba(255, 255, 255, 0.24);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .sec2ht .contentpage h1 {
+            font-size: 35px;
+            margin-top: 25px;
+            text-align: center;
+        }
+
+    .sec2ht .storypage h1 {
+        font-size: 35px;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+
+    .sec2ht .contentpage img {
+        width: 360px;
+        height: 520px;
+        border-radius: 5px;
+    }
+
+        .sec2ht .contentpage img:hover {
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+            border: 1px solid #f3c50bd9;
+        }
+
+    .sec2ht .storypage {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+
+
+        .sec2ht .storypage .btnslist {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            margin-left: 9.5px;
+            gap: 9px;
+        }
+
+        .sec2ht .storypage .btnslist2 {
+            justify-self: center;
+            margin-left: 97px;
+            gap: 9px;
+        }
+
+            .sec2ht .storypage .btnslist2 .btndet {
+                width: 110px;
+                height: 52px;
+                background-color: #000;
+                border: 1px solid #000;
+                border-radius: 15px;
+                font-size: 23px;
+                cursor: pointer;
+                color: #fff;
+                font-weight: 600;
+                font-family: 'Nanum Myeongjo', serif;
+                padding: 11px;
+                padding-left: 20px;
+                padding-right: 20px;
+                text-align: center;
+                margin-left: 7px;
+                text-decoration: none;
+            }
+
+                .sec2ht .storypage .btnslist2 .btndet:hover {
+                    background-color: #fff;
+                    color: #000;
+                }
+
+
+
+
+.searchtiom {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: -100px;
+    margin-left: -2450px;
+    position: fixed;
+/*    background: rgba(255, 255, 255, 0.74);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.3px);
+    -webkit-backdrop-filter: blur(3.3px);*/
+/*    width: 5479px;*/
+}
+
+
+
+.headserach {
+    background-color: #ffffffea;
+    box-shadow: -1px 9px 19px -5px rgba(211, 211, 211, 0.652);
+    backdrop-filter: blur(3.3px);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 735px;
+    height: 120px;
+    margin-top: -117px;
+    margin-right: 400px;
+    position: fixed;
+    margin-left: 360px;
+}
+
+body > header > nav > div > div > ul:nth-child(2) > li.nav-item.acconl > a {
+    display: none;
+}
+
+.headserach div label {
+    font-size: 26px;
+    margin-right: 10px;
+    margin-top: -23px;
+}
+
+    .headserach form input{
+        height:40px;
+        width: 180px;
+    }
+
+.searchtop {
+    margin-top: 30px;
+    margin-left: 70px;
+}
+
+.searchtop #SearchTerm {
+    width: 500px;
+    height: 55px;
+    margin-top: 5px;
+}
+
+.sec2 .bookfavt {
+    margin-top: -75px;
+}
+
+.sec2 .contentpage {
+    text-align: center;
+    width: 340px;
+    height: 520px;
+    box-shadow: -1px 9px 19px -5px rgba(24, 23, 23, 0.568);
+    background-color: #ffffff;
+    border: 0.5px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+    .sec2 .contentpage:hover {
+        background: rgba(255, 255, 255, 0.24);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+        .sec2 .contentpage h1 {
+            font-size: 35px;
+            margin-top:25px;
+            text-align: center;
+        }
+
+    .sec2 .contentpage .cut-text {
+        line-height: 1.6rem;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        max-height: 6.5rem;
+    }
+
+            .sec2 .storypage h1 {
+                font-size: 35px;
+                margin-top: 25px;
+                text-align: center;
+                background-color: rgb(255,255,255);
+            }
+
+
+    .sec2 .contentpage img {
+        width: 360px;
+        height: 520px;
+        border-radius: 5px;
+    }
+
+        .sec2 .contentpage img:hover {
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+            border: 1px solid #f3c50bd9;
+        }
+
+        .sec2 .storypage {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin-top: 80px;
+            cursor: pointer;
+        }
+
+
+
+            .sec2 .storypage .btnslist {
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: row;
+                margin-left: -8.5px;
+                gap: 9px;
+            }
+
+            .sec2 .storypage .btnslist2 {
+                justify-self: center;
+                margin-left: 56px;
+                gap: 9px;
+            }
+
+        .sec2 .storypage .btnslist2 .btndet {
+            width: 110px;
+            height: 52px;
+            background-color: #000;
+            border: 1px solid #000;
+            border-radius: 15px;
+            font-size: 23px;
+            cursor: pointer;
+            color: #fff;
+            font-weight: 600;
+            font-family: 'Nanum Myeongjo', serif;
+            padding: 11px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .sec2 .storypage .btnslist2 .btndet:hover {
+            background-color: #fff;
+            color: #000;
+        }
+            .sec2 .storypage .btnslist .btndet {
+                width: 110px;
+                height: 52px;
+                background-color: #000;
+                border: 1px solid #000;
+                border-radius: 15px;
+                font-size: 23px;
+                cursor: pointer;
+                color: #fff;
+                font-weight: 600;
+                font-family: 'Nanum Myeongjo', serif;
+                padding-top: 8px;
+                text-align:center;
+                text-decoration:none;
+            }
+
+                .sec2 .storypage .btnslist .btndet:hover {
+                    background-color: #fff;
+                    color: #000;
+                }
+
+            .sec2 .storypage .btnslist .btnedi {
+                width: 110px;
+                height: 52px;
+                background-color: #f3c50bde;
+                border: 1px solid #f3c50bde;
+                border-radius: 15px;
+                font-size: 23px;
+                cursor: pointer;
+                color: #fff;
+                padding-top: 8px;
+                text-align: center;
+                text-decoration:none;
+                font-weight: 600;
+                font-family: 'Nanum Myeongjo', serif;
+            }
+
+                .sec2 .storypage .btnslist .btnedi:hover {
+                    background-color: #f3c50b;
+                    border: 1px solid #f3c50b;
+                }
+
+            .sec2 .storypage .btnslist .btndel {
+                width: 110px;
+                height: 52px;
+                background-color: #e32b2b;
+                border: 1px solid #e32b2b;
+                border-radius: 15px;
+                font-size: 23px;
+                color: #ffffff;
+                font-weight: 600;
+                padding-top: 8px;
+                text-align: center;
+                text-decoration: none;
+                font-family: 'Nanum Myeongjo', serif;
+                cursor: pointer;
+            }
+
+                .sec2 .storypage .btnslist .btndel:hover {
+                    background-color: #cf2828;
+                    border: 1px solid #cf2828;
+                }
+
+.sec2 .btnslist2 img {
+    width: 43px;
+    cursor: pointer;
+    margin-left: 25px;
+    margin-top: -8px;
+}
+
+
+
+.sec2 .btnslist2 img:hover {
+    width: 48px;
+}
+
+
+.sec2 .storypage .btnslist2 .btndetf {
+    width: 110px;
+    height: 52px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    font-size: 23px;
+    cursor: pointer;
+    color: #000;
+    font-weight: 600;
+    font-family: 'Nanum Myeongjo', serif;
+    padding: 11px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: -115.9px;
+    text-align: center;
+    text-decoration: none;
+}
+
+    .sec2 .storypage .btnslist2 .btndetf:hover {
+          background-color: rgba(24, 23, 23, 0.09);
+    border-color: rgba(24, 23, 23, 0.09);
+        color:#000;
+    }
+
+.sec2 .storypage .btnslist3 .btndetf3 {
+    width: 110px;
+    height: 52px;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 15px;
+    font-size: 23px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Nanum Myeongjo', serif;
+    padding: 11px;
+    padding-left: 20px;
+    padding-right: 20px;
+/*    margin-left: -114px;*/
+    margin-top: 40px;
+    margin-left: 135px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sec2 .storypage .btnslist3 {
+    margin-left: -40px;
+}
+
+.sec2 a {
+    text-decoration: none;
+    color: #000;
+}
+
+.sec2 .storypage .btnslist3 .btndetf4 {
+    width: 110px;
+    height: 52px;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 15px;
+    font-size: 23px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Nanum Myeongjo', serif;
+    padding: 11px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /*    margin-left: -114px;*/
+    margin-top: 40px;
+    margin-left: 163px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+    .sec2 .storypage .btnslist3 .btndetf4:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .sec2 .storypage .btnslist6 .btndetf4 {
+        width: 110px;
+        height: 52px;
+        background-color: #000;
+        border: 1px solid #000;
+        border-radius: 15px;
+        font-size: 23px;
+        cursor: pointer;
+        color: #fff;
+        font-weight: 600;
+        font-family: 'Nanum Myeongjo', serif;
+        padding: 11px;
+        padding-left: 20px;
+        padding-right: 20px;
+        /*    margin-left: -114px;*/
+        margin-top: 40px;
+        margin-left: 5px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+.sec2 .storypage .btnslist6 .btndetf3 {
+    width: 110px;
+    height: 52px;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 15px;
+    font-size: 23px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Nanum Myeongjo', serif;
+    padding: 11px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /*    margin-left: -114px;*/
+    margin-top: 40px;
+    margin-left: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+    .sec2 .storypage .btnslist6 .btndetf3:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+
+
+
+    .sec2 .storypage .btnslist6 .btndetf4:hover {
+        background-color: #cf2828;
+        border: 1px solid #cf2828;
+        color: #fff;
+    }
+
+
+
+.sec2 .btnslist3 .btnfavbtn {
+    width: 20px;
+    margin-top: -64px;
+}
+
+
+.sec2 .btnfav56 {
+    width: 110px;
+    height: 52px;
+    background-color: #f3c50bde;
+    border: 1px solid #f3c50bde;
+    border-radius: 15px;
+    font-size: 23px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Nanum Myeongjo', serif;
+    padding: 9px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 225px;
+    margin-top: 19px;
+}
+
+    .sec2 .btnfav56:hover {
+        background-color: #fff;
+        border: 1px solid #f3c50bde;
+        color: #000;
+    }
+
+    .sec2 .storypage .btnslist3 .btndetf5 {
+        width: 110px;
+        height: 52px;
+        background-color: #000;
+        border: 1px solid #000;
+        border-radius: 15px;
+        font-size: 23px;
+        cursor: pointer;
+        color: #fff;
+        font-weight: 600;
+        font-family: 'Nanum Myeongjo', serif;
+        padding: 11px;
+        padding-left: 20px;
+        padding-right: 20px;
+        /*    margin-left: -114px;*/
+        margin-top: 40px;
+        margin-left: 99px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+
+    .sec2 .storypage .btnslist3 .btndetf5:hover {
+        background-color: #fff;
+        border: 1px solid #000;
+        color: #000;
+    }
+
+    .sec2 .storypage .btnslist3 .btnfav {
+        background-color: #fff;
+        border-color: transparent;
+    }
+
+.sec2 .storypage .btnslist3 .btnfav img {
+    width: 43px;
+    margin-left: 15px;
+    margin-top: -8px;
+}
+
+    .sec2 .storypage .btnslist3 .btnfav img:hover {
+        width: 49px;
+    }
+
+
+.sec2 .storypage .btnslist3 .btndetf3:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #000;
+    color: #000;
+}
+
+.sec2 .storypage .btnslist2 .btnedi {
+    width: 110px;
+    height: 52px;
+    border: 1px solid #eabe0e;
+    border-radius: 15px;
+    font-size: 23px;
+    cursor: pointer;
+    color: #000;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 11.5px;
+    padding-bottom: 11.5px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+    .sec2 .storypage .btnslist2 .btnedi:hover {
+        background-color: #f3c50b;
+        border: 1px solid #f3c50b;
+    }
+
+.sec2 .storypage .btnslist2 .btndel {
+    width: 110px;
+    height: 52px;
+    border: 1px solid #e32b2b;
+    border-radius: 15px;
+    font-size: 23px;
+    color: #000;
+    font-weight: 600;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 11.5px;
+    padding-bottom: 11.5px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Nanum Myeongjo', serif;
+    cursor: pointer;
+}
+
+    .sec2 .storypage .btnslist2 .btndel:hover {
+        background-color: #cf2828;
+        border: 1px solid #cf2828;
+        color: #fff;
+    }
+
+.sec2 .btnslist2 .btnfavbtn {
+    margin-top: -50px;
+    margin-left: 120px;
+}
+
+    .sec2 .btnslist2 .btnfavbtn .btnfav {
+        width: 117px;
+        height: 50.5px;
+        background-color: #f3c50bde;
+        border: 1px solid #f3c50bde;
+        border-radius: 15px;
+        font-size: 24px;
+        cursor: pointer;
+        color: #fff;
+        font-weight: 600;
+        font-family: 'Nanum Myeongjo', serif;
+        padding-top: 5.4px;
+        margin-top: 5.79px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+        .sec2 .btnslist2 .btnfavbtn .btnfav:hover {
+            background-color: #fff;
+            border: 1px solid #f3c50bde;
+            color: #000;
+        }
+
+        .sec2 .contentpage .cut-text {
+            width: 255px;
+            font-size: 18px;
+            line-height: 39px;
+            align-self: center;
+            text-align: center;
+            font-style: italic;
+            margin-left: 43px;
+            margin-top: 50px;
+        }
+
+.sec2 .contentpage .cut-text {
+    line-height: 1.5rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    max-height: 6.5rem;
+}
+
+
+.pagiion {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-top: -100px;
+    gap:600px;
+    margin-left: -64px;
+}
+
+
+.sec4 {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.062), rgba(255, 255, 255, 0.062)), url("/images/2cd43b_4649bce7dad04d89b63ba2c8e6233511_mv2_d_2167_1984_s_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 300px;
+    width: 3050px;
+    margin-left: -980px;
+}
+
+/*    .sec4 .sec4di {
+        background-image: url("/images/2cd43b_ce3e0ed9df464a578c32279217012bb8_mv2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }*/
+
+    .sec4 .asideimg img {
+        padding-top: -200px;
+        margin-bottom: 0px;
+        margin-left: 410px;
+        margin-top: 60px;
+        width: 930px;
+    }
+
+
+    .sec4 .addstory {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: -80px;
+        border-radius: 25px;
+        border: 0.5px solid #fff;
+        background-color: #ffffffb0;
+        font-family: 'Nanum Myeongjo', serif;
+        box-shadow: -1px 33px 33px -6px rgba(0,0,0,0.75);
+        width: 1400px;
+        height: 3100px;
+        margin-bottom: 130px;
+        margin-top: 200px;
+        margin-left: 780px;
+        position: static;
+        cursor: pointer;
+    }
+
+    .sec4 .addstory:hover{
+        background-color: rgba(24, 23, 23, 0.09)
+    /*background-color: rgba(255, 255, 255,0.1);*/
+    }
+
+.sec5 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-image: url("https://media.vanityfair.com/photos/5fca7d69e92c635d9828f94d/master/pass/best-books-of-2020.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+/*    margin-top: 150px;
+    margin-bottom: 150px;*/
+    height: 1700px;
+}
+
+    .sec5 .signup form h1 {
+        font-size: 49px;
+    }
+
+    .sec5 .signup form p {
+        font-size: 30px;
+        margin-top: 9px;
+    }
+
+    .sec5 .signup form input {
+        width: 550px;
+        height: 55px;
+        font-size: 30px;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.942);
+        margin-left: 220px;
+    }
+
+    .sec5 .signup {
+        width: 1000px;
+        height: 1460px;
+        border-radius: 25px;
+        box-shadow: -1px 9px 19px -5px rgba(24, 23, 23, 0.934);
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.768), rgba(255, 255, 255, 0.763)), url("https://img.freepik.com/free-vector/vector-3d-abstract-human-head-made-black-white-stripes-monochrome-ripple-surface-illustration-head-profile-sliced-minimalistic-design-layout-business-presentations-flyers-posters_1217-6441.jpg?w=1380&t=st=1661002888~exp=1661003488~hmac=51d0ab99515a76b92199bac592d101da9d1503ed217d19681c735b8a7066e550");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 0.5px solid rgb(0, 0, 0);
+        background-color: rgba(255, 255, 255, 0.76);
+        margin-left: 1040px;
+        margin-bottom: 150px;
+        margin-top: 130px;
+        position: static;
+    }
+
+        .sec5 .signup h1, p {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .sec5 .signup p {
+            text-align: center;
+        }
+
+        .sec5 .signup form {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            font-size: 45px;
+        }
+
+            .sec5 .signup form label {
+                margin-top: 40px;
+                margin-bottom: 10px;
+                font-size: 32px;
+                font-weight: 600;
+                margin-left: 220px;
+            }
+
+            .sec5 .signup form .btnsignu {
+                width: 170px;
+                height: 65px;
+                background-color: #000;
+                border: 1px solid #000;
+                box-shadow: -1px 9px 19px -5px rgba(120, 118, 118, 0.652);
+                border-radius: 20px;
+                font-size: 25px;
+                cursor: pointer;
+                color: rgb(255, 255, 255);
+                font-weight: 600;
+                font-family: 'Nanum Myeongjo', serif;
+                padding-top: 0px;
+                margin-top: 50px;
+                margin-left: 400px;
+            }
+
+                .sec5 .signup form .btnsignu:hover {
+                    background-color: rgba(255, 255, 255, 0.853);
+                    color: #000;
+                }
+
+            .sec5 .signup form img {
+                width: 70px;
+                margin-left: 450px;
+                margin-top: 55px;
+            }
+
+            .sec5 .signup form a {
+                font-size: 15px;
+                color: rgba(0, 0, 0, 0.599);
+                text-align: center;
+                margin-top: 15px;
+                margin-bottom: 80px;
+            }
+
+
+.sec4ev {
+ /*   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.062), rgba(255, 255, 255, 0.062)), url("/images/2cd43b_4649bce7dad04d89b63ba2c8e6233511_mv2_d_2167_1984_s_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    margin-bottom: 300px;
+    width: 3050px;
+    margin-left: -980px;
+}
+
+    .sec4ev .addevent {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: -80px;
+        border-radius: 25px;
+        background-color: #ffffffb0;
+        font-family: 'Nanum Myeongjo', serif;
+        box-shadow: -1px 33px 33px -6px rgba(0,0,0,0.75);
+        width: 1600px;
+        height: 4370px;
+        margin-bottom: 130px;
+        margin-top: 200px;
+        margin-left: 780px;
+        position: static;
+        cursor:pointer;
+    }
+
+.sec4 .addcontest {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: -80px;
+    border-radius: 25px;
+    border: 0.5px solid #fff;
+    background-color: #ffffffb0;
+    font-family: 'Nanum Myeongjo', serif;
+    box-shadow: -1px 33px 33px -6px rgba(0,0,0,0.75);
+    width: 1400px;
+    height: 5400px;
+    margin-bottom: 130px;
+    margin-top: 200px;
+    margin-left: 780px;
+    position: static;
+    cursor: pointer;
+}
+
+
+.sec4ev .addevent:hover {
+    background-color: rgba(24, 23, 23, 0.09)
+    /*background-color: rgba(255, 255, 255,0.1);*/
+}
+
+.sec4 .addcontest:hover {
+    background-color: rgba(24, 23, 23, 0.09)
+    /*background-color: rgba(255, 255, 255,0.1);*/
+}
+
+
+.sec4 .addcontest form label {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #000;
+    /*        width: 1300px;
+            background-color: rgba(255, 255, 255);*/
+}
+    .sec4 .addcontest form h1 {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .sec4 .addcontest form span {
+        width: 720px;
+        font-size: 26px;
+    }
+
+    .sec4 .addcontest form input {
+        width: 720px;
+        height: 65px;
+        font-size: 35px;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.942);
+    }
+
+    .sec4 .addcontest form {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        width: 1300px;
+        height: 5280px;
+        background-color: rgba(255, 255, 255, 0.84);
+        border-radius: 25px;
+    }
+
+    .sec4 .addcontest .btnadd {
+        width: 230px;
+        height: 70px;
+        background-color: #000;
+        border: 1px solid #000;
+        box-shadow: -1px 9px 19px -5px rgba(120, 118, 118, 0.652);
+        border-radius: 25px;
+        font-size: 30px;
+        color: #ffffff;
+        font-weight: 600;
+        font-family: 'Nanum Myeongjo', serif;
+        cursor: pointer;
+        padding-top: 0px;
+        margin-top: 60px;
+        margin-bottom: 150px;
+    }
+
+        .sec4 .addcontest .btnadd:hover {
+            background-color: transparent;
+            border: 1px solid #000;
+            color: #000;
+        }
+
+
+   /* .sec6 .addevent:hover {
+        background-color: rgba(24, 23, 23, 0.09);
+    }*/
+
+.sec4ev {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.062), rgba(255, 255, 255, 0.062)), url("/images/2cd43b_4649bce7dad04d89b63ba2c8e6233511_mv2_d_2167_1984_s_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sec4ev .addevent form label {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #000;
+    /*        width: 1300px;
+            background-color: rgba(255, 255, 255);*/
+}
+
+.sec4ev .addevent form h1 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.sec4ev .addevent form span {
+    width: 720px;
+    font-size: 26px;
+}
+
+.sec4ev .addevent form input {
+    width: 720px;
+    height: 65px;
+    font-size: 35px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.942);
+}
+
+
+.sec4ev .addevent form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    width: 1300px;
+    height: 4270px;
+    background-color: rgba(255, 255, 255, 0.84);
+    border-radius: 25px;
+}
+
+.sec4ev .addevent .btnadd {
+    width: 230px;
+    height: 70px;
+    background-color: #000;
+    border: 1px solid #000;
+    box-shadow: -1px 9px 19px -5px rgba(120, 118, 118, 0.652);
+    border-radius: 25px;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Nanum Myeongjo', serif;
+    cursor: pointer;
+    padding-top: 0px;
+    margin-top: 60px;
+    margin-bottom: 150px;
+}
+
+    .sec4ev .addevent .btnadd:hover {
+        background-color: transparent;
+        border: 1px solid #000;
+        color: #000;
+    }
+
+#a {
+    height: 200px;
+    width: 400px;
+}
+
+#b {
+    height: 200px;
+    width: 400px;
+}
+
+#c {
+    background-color: blue;
+    height: 200px;
+    width: 400px;
+}
+
+#d {
+    background-color: darkviolet;
+    height: 200px;
+    width: 400px;
+}
+
+#colors div {
+    display: none;
+}
+
+.sec4 .addstory form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    width: 1300px;
+    background-color: rgba(255, 255, 255, 0.84);
+    border-radius: 25px;
+}
+
+    .sec4 .addstory form label {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        color: #000;
+/*        width: 1300px;
+            background-color: rgba(255, 255, 255);*/
+    }
+
+            .sec4 .addstory form h1 {
+                margin-top: 40px;
+                margin-bottom: 30px;
+            }
+
+                .sec4 .addstory form span {
+                    width: 720px;
+                    font-size: 26px;
+                }
+
+                .sec4 .addstory form input {
+                    width: 720px;
+                    height: 65px;
+                    font-size: 35px;
+                    border-radius: 20px;
+                    background-color: rgba(255, 255, 255, 0.942);
+                }
+
+            /*.sec4 .addstory form textarea {
+                resize: none;
+                width: 685px;
+                height: 200px;
+                margin-top: 22px;
+                margin-bottom: 28px;
+                padding: 15px;
+                font-size: 30px;
+                border: 1px solid #000;
+                border-radius: 20px;
+            }*/
+
+        .sec4 .addstory .btnadd {
+            width: 230px;
+            height: 70px;
+            background-color: #f3c50bde;
+            border: 1px solid #f3c50bd9;
+            box-shadow: -1px 9px 19px -5px rgba(120, 118, 118, 0.652);
+            border-radius: 25px;
+            font-size: 30px;
+            color: #ffffff;
+            font-weight: 600;
+            font-family: 'Nanum Myeongjo', serif;
+            cursor: pointer;
+            padding-top: 0px;
+            margin-top: 60px;
+            margin-bottom: 150px;
+        }
+
+.sec4 .addstory .btnaddbk {
+    width: 230px;
+    height: 70px;
+    background-color: #000;
+    border: 1px solid #000;
+    box-shadow: -1px 9px 19px -5px rgba(120, 118, 118, 0.652);
+    border-radius: 25px;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Nanum Myeongjo', serif;
+    cursor: pointer;
+    padding-top: 0px;
+    margin-top: 60px;
+    margin-bottom: 150px;
+}
+
+            .sec4 .addstory .btnadd:hover {
+                background-color: #ecc00c;
+                border: 1px solid #f3c50bd9;
+            }
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 0.5px solid rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.942);
+    border-radius: 20px;
+    display: inline-block;
+    padding-top: 10.7px;
+    padding-bottom: 10.7px;
+    padding-right: 265px;
+    padding-left: 265px;
+    cursor: pointer;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 0.5px solid rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.942);
+    border-radius: 18px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 172px;
+    padding-left: 305px;
+    font-size: 27px;
+    font-family: 'Nanum Myeongjo', serif;
+    cursor: pointer;
+}
+
+    select > option {
+        font-size: 27px;
+        font-family: 'Nanum Myeongjo', serif;
+    }
+
+.sec2 .formdiv {
+    margin-left: 400px;
+}
+.sec2 form input {
+    /*   width: 720px;*/
+    height: 65px;
+    font-size: 35px;
+    border-radius: 20px;
+    text-align:center;
+    background-color: rgba(255, 255, 255, 0.942);
+}
+
+.sec2 select {
+    /*    width: 50px;*/
+    height: 65px;
+    font-size: 35px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.942);
+}
+
+    .sec2 select > option {
+        font-size: 27px;
+        font-family: 'Nanum Myeongjo', serif;
+    }
+
+
+
+
+.searchtiom {
+    position: absolute;
+}
+
+
+.sec10 {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.121), rgba(255, 255, 255, 0.174)),url("https://img.freepik.com/free-vector/set-realistic-green-tea-leaves-sprouts-isolated-white-background-sprig-green-tea-tea-leaf-vector-illustration_87521-3451.jpg?w=1060&t=st=1661015799~exp=1661016399~hmac=df687af774bda99ee757c3bdaec6c2fa58bc6c3aaf1bae380043b5e3d816371e");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 200px;
+    margin-bottom: 300px;
+}
+
+    .sec10 .asideimg img {
+        padding-top: -200px;
+        margin-bottom: 0px;
+        margin-left: 410px;
+        margin-top: 60px;
+        width: 930px;
+    }
+
+
+    .sec10 .addstoryad {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        border: 3px solid #000;
+        background-color: #ffffff3c;
+        font-family: 'Nanum Myeongjo', serif;
+        box-shadow: -1px 33px 33px -6px rgba(0,0,0,0.75);
+        width: 1300px;
+        height: 1950px;
+        margin-bottom: 130px;
+    }
+
+.sec5 {
+/*    background-image: linear-gradient(to bottom, rgba(255, 255, 255,0.1), rgba(255, 255, 255, 0.1)), url("https://img.freepik.com/free-vector/realistic-grainy-texture-background_23-2149231135.jpg?w=1060&t=st=1666101726~exp=1666102326~hmac=5e58ca27cd3be6386539be43b7d368478bc7ce00346e081a6f6386bda446a861");
+    background-repeat: repeat;
+    background-size: cover;*/
+  /*  margin-bottom: 300px;*/
+    width: 3050px;
+    margin-left: -980px;
+}
+
+.sec5 .addstory {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border: 3px solid #000;
+    font-family: 'Nanum Myeongjo', serif;
+    box-shadow: -1px 33px 33px -6px rgba(0,0,0,0.85);
+    width: 1300px;
+    height: 2390px;
+    margin-bottom: 130px;
+    margin-top: 250px;
+    position: static;
+}
+/*
+    .sec5 .addstory:hover {
+        background: rgba(255, 255, 255, 0.74);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(3.3px);
+        -webkit-backdrop-filter: blur(3.3px);
+    }*/
+
+.sec5 .addstory form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    width: 1300px;
+    background-color: rgba(255, 255, 255, 0.84);
+    border-radius: 25px;
+    /*    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.167), rgba(255, 255, 255, 0.167)), url("https://www.rd.com/wp-content/uploads/2020/02/50FavoriteBookQuotes-51.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+
+.sec5 .addstory form h1 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.sec5 .addstory form span {
+    width: 720px;
+    font-size: 26px;
+}
+
+.sec5 .addstory form input {
+    width: 720px;
+    height: 65px;
+    font-size: 35px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.942);
+}
+
+.sec5 .addstory form label {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #000;
+    /*        width: 1300px;
+            background-color: rgba(255, 255, 255);*/
+}
+ 
+    .sec5 .addstory .btnadd {
+        width: 230px;
+        height: 70px;
+        background-color: #000;
+        border: 1px solid #000;
+        box-shadow: -1px 9px 19px -5px rgba(120, 118, 118, 0.652);
+        border-radius: 25px;
+        font-size: 30px;
+        color: #fff;
+        font-weight: 600;
+        font-family: 'Nanum Myeongjo', serif;
+        cursor: pointer;
+        padding-top: 0px;
+        margin-top: 60px;
+        margin-bottom: 150px;
+    }
+
+    .sec5 .addstory .btnadd:hover {
+        background-color: transparent;
+        border: 1px solid #000;
+        color: #000;
+    }
+
+
+.sec6lo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-image: url("https://media.newyorker.com/photos/61b3d30ee8b00ce54bff9a39/master/w_1600%2Cc_limit/14-TNY-BestBooks2021-BrothersandKeepers-Wideman.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1760px;
+    width: 2500px;
+    margin-left: -680px;
+    margin-top: -60px;
+    margin-bottom: 0px;
+}
+
+    .sec6lo .login {
+        width: 930px;
+        height: 1020px;
+        border-radius: 25px;
+        border: 0.5px solid rgb(0, 0, 0);
+        box-shadow: -1px 9px 19px -5px rgba(24, 23, 23, 0.934);
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.118), rgba(255, 255, 255, 0.118)), url("https://img.freepik.com/free-vector/vector-3d-abstract-human-head-made-black-white-stripes-monochrome-ripple-surface-illustration-head-profile-sliced-minimalistic-design-layout-business-presentations-flyers-posters_1217-6441.jpg?w=1380&t=st=1661002888~exp=1661003488~hmac=51d0ab99515a76b92199bac592d101da9d1503ed217d19681c735b8a7066e550");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(255, 255, 255, 0.89);
+        margin-left: 832px;
+        margin-bottom: 150px;
+        margin-top: 430px;
+        position: static;
+    }
+
+        .sec6lo .login form {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            text-align: left;
+            font-size: 45px;
+        }
+
+            .sec6lo .login form input {
+                width: 550px;
+                height: 55px;
+                font-size: 30px;
+                border-radius: 15px;
+                background-color: rgba(255, 255, 255, 0.942);
+                margin-left: 120px;
+            }
+
+            .sec6lo .login form h1 {
+                text-align: center;
+                margin-top: 30px;
+            }
+
+            .sec6lo .login form p {
+                font-size: 30px;
+                margin-top: 9px;
+                text-align: center;
+            }
+
+            .sec6lo .login form label {
+                margin-top: 50px;
+                margin-left: 120px;
+                font-size: 32px;
+                margin-bottom: 15px;
+                font-weight: 600;
+            }
+
+            .sec6lo .login form .btnlogiu {
+                width: 170px;
+                height: 65px;
+                background-color: rgba(255, 255, 255, 0.67);
+                border: 1px solid #000;
+                box-shadow: -1px 9px 19px -5px rgba(120, 118, 118, 0.652);
+                border-radius: 20px;
+                font-size: 25px;
+                cursor: pointer;
+                font-weight: 600;
+                font-family: 'Nanum Myeongjo', serif;
+                padding-top: 0px;
+                margin-top: 80px;
+                margin-left: 320px;
+            }
+
+                .sec6lo .login form .btnlogiu:hover {
+                    background-color: rgb(0, 0, 0);
+                    color: #fff;
+                }
+
+            .sec6lo .login form img {
+                width: 70px;
+                margin-left: 372px;
+                margin-top: 45px;
+            }
+
+            .sec6lo .login form a {
+                font-size: 20px;
+                color: rgba(0, 0, 0, 0.599);
+                text-align: center;
+                margin-top: 15px;
+                margin-bottom: 80px;
+            }
+
+.sec10 .addstoryad form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    width: 930px;
+    background-color: rgba(255, 255, 255, 0.84);
+    border-radius: 25px;
+}
+
+            .sec10 .addstoryad form label {
+                margin-top: 60px;
+                margin-bottom: 30px;
+            }
+
+            .sec10 .addstoryad form input {
+                width: 720px;
+                height: 65px;
+                font-size: 35px;
+                border-radius: 20px;
+                background-color: rgba(255, 255, 255, 0.942);
+            }
+
+            .sec10 .addstoryad form textarea {
+                resize: none;
+                width: 685px;
+                height: 200px;
+                margin-top: 22px;
+                margin-bottom: 28px;
+                padding: 15px;
+                font-size: 30px;
+                border: 1px solid #000;
+                border-radius: 20px;
+            }
+
+textarea {
+    resize: none;
+    width: 685px;
+    height: 200px;
+    margin-top: 22px;
+    margin-bottom: 28px;
+    padding: 15px;
+    font-size: 30px;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+
+        .sec10 .addstoryad .btnadd {
+            width: 230px;
+            height: 70px;
+            background-color: #f3c50bde;
+            border: 1px solid #f3c50bd9;
+            box-shadow: -1px 9px 19px -5px rgba(120, 118, 118, 0.652);
+            border-radius: 25px;
+            font-size: 30px;
+            color: #ffffff;
+            font-weight: 600;
+            font-family: 'Nanum Myeongjo', serif;
+            cursor: pointer;
+            padding-top: 0px;
+            margin-top: 60px;
+            margin-bottom: 150px;
+        }
+
+            .sec10 .addstoryad .btnadd:hover {
+                background-color: #ecc00c;
+                border: 1px solid #f3c50bd9;
+            }
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 0.5px solid rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.942);
+    border-radius: 20px;
+    display: inline-block;
+    padding-top: 10.7px;
+    padding-bottom: 10.7px;
+    padding-right: 265px;
+    padding-left: 265px;
+    cursor: pointer;
+}
+
+
+
+
+.sec8 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.115), rgba(255, 255, 255, 0.115)),url("/images/2cd43b_4fe606c7f6784f38b7839c656c3afb94_mv2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2072px;
+    gap: 90px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    position: static;
+    margin-right: -600px;
+}
+
+    .sec8 .imgcon img {
+        width: 490px;
+        margin-top: 95px;
+        margin-left: -17px;
+    }
+
+    .sec8 .imgcon {
+        width: 650px;
+        height: 1000px;
+        background: rgba(255, 255, 255, 0.24);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        cursor: pointer;
+        
+    }
+
+        .sec8 .imgcon:hover {
+            background: rgba(255, 255, 255, 0.54);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+
+    .sec8 .imgcon2 {
+        width: 650px;
+        height: 1000px;
+        background: rgba(255, 255, 255, 0.24);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        cursor: pointer;
+        margin-top: -120px;
+    }
+
+    .sec8 .imgcon2 img {
+        width: 490px;
+        margin-top: 95px;
+        margin-left: -17px;
+    }
+
+    .sec8 .imgcon2:hover {
+        background: rgba(255, 255, 255, 0.54);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .sec8 .information {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: -200px;
+        width: 2000px;
+        height: 1300px;
+        text-align: center;
+        margin-left: -955px;
+    }
+
+        .sec8 .information .infti {
+            width: 700px;
+            height: 1000px;
+            background: rgba(255, 255, 255, 0.24);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            text-align: center;
+            cursor: pointer;
+            margin-top: 4px;
+        }
+
+            .sec8 .information .infti:hover {
+                background: rgba(255, 255, 255, 0.54);
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                
+                border: 1px solid rgba(255, 255, 255, 0.3);
+            }
+
+            .sec8 .information .infti h2 {
+                font-size: 32px;
+            }
+
+            .sec8 .information .infti p {
+                font-size: 28px;
+            }
+
+            .sec8 h1 {
+                font-size: 60px;
+                margin-bottom: -120px;
+            }
+
+    .sec8 .storyinf {
+        width: 2600px;
+        height: 2400px;
+        background: rgba(255, 255, 255, 0.24);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        text-align: center;
+        margin-left: -940px;
+        margin-top: -70px;
+        cursor: pointer;
+    }
+
+        .sec8 .storyinf:hover {
+            background: rgba(255, 255, 255, 0.54);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        body > div > main > div > div.col-md-6.col-md-offset-2 {
+            display: none;
+        }
+
+/*body > div > main > div > div.col-md-4 {
+    margin-top: 200px;
+   
+}*/
+
+#registerForm {
+    width: 1000px;
+    height: 1060px;
+    border-radius: 25px;
+    box-shadow: -1px 9px 19px -5px rgba(24, 23, 23, 0.934);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.168), rgba(255, 255, 255, 0.168)), url("https://img.freepik.com/free-vector/vector-3d-abstract-human-head-made-black-white-stripes-monochrome-ripple-surface-illustration-head-profile-sliced-minimalistic-design-layout-business-presentations-flyers-posters_1217-6441.jpg?w=1380&t=st=1661002888~exp=1661003488~hmac=51d0ab99515a76b92199bac592d101da9d1503ed217d19681c735b8a7066e550");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0.5px solid rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.76);
+    margin-left: 50px;
+    margin-bottom: 150px;
+    margin-top: 130px;
+}
+
+#account {
+    width: 930px;
+    height: 970px;
+    border-radius: 25px;
+    border: 0.5px solid rgb(0, 0, 0);
+    box-shadow: -1px 9px 19px -5px rgba(24, 23, 23, 0.934);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.318), rgba(255, 255, 255, 0.318)), url("https://img.freepik.com/free-vector/vector-3d-abstract-human-head-made-black-white-stripes-monochrome-ripple-surface-illustration-head-profile-sliced-minimalistic-design-layout-business-presentations-flyers-posters_1217-6441.jpg?w=1380&t=st=1661002888~exp=1661003488~hmac=51d0ab99515a76b92199bac592d101da9d1503ed217d19681c735b8a7066e550");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.89);
+    margin-left: 90px;
+    margin-bottom: 150px;
+    margin-top: 200px;
+}
+
+    #account > div:nth-child(7) > p:nth-child(1) {
+        font-size:22px;
+    }
+
+
+    #account > div:nth-child(7) > p:nth-child(2) {
+        font-size: 22px;
+    }
+
+    #account > div:nth-child(7) > p:nth-child(3) {
+        font-size: 22px;
+    }
+
+    #registerForm input {
+        width: 550px;
+        height: 55px;
+        font-size: 30px;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.942);
+        margin-left: 220px;
+    }
+
+#registerForm  {
+    text-align: center;
+}
+
+#account h4 {
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+#account label {
+    font-size: 30px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#account {
+    text-align:center;
+}
+
+    #account input {
+        width: 550px;
+        height: 55px;
+        font-size: 30px;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.942);
+        margin-left: 190px;
+    }
+
+#registerForm label {
+    font-size: 30px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+    #registerForm h4 {
+        font-size: 30px;
+        padding-top: 50px;
+    }
+/*#registerForm input label {
+            font-size: 30px;
+            margin-top: -29px;
+        }
+
+        #registerForm  input h1 {
+            text-align: center;
+        }*/
+
+#login-submit {
+    width: 170px;
+    height: 65px;
+    background-color: #000;
+    border: 1px solid #000;
+    box-shadow: -1px 9px 19px -5px rgba(120, 118, 118, 0.652);
+    border-radius: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-family: 'Nanum Myeongjo', serif;
+    padding-top: 10px;
+    margin-top: 90px;
+    margin-left: 0px;
+}
+
+#account > div:nth-child(5) {
+    display:none;
+}
+
+#login-submit:hover {
+    background-color: #fff;
+    color:#000;
+}
+
+#registerSubmit {
+    width: 170px;
+    height: 65px;
+    background-color: #000;
+    border: 1px solid #000;
+    box-shadow: -1px 9px 19px -5px rgba(120, 118, 118, 0.652);
+    border-radius: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-family: 'Nanum Myeongjo', serif;
+    padding-top: 10px;
+    margin-top: 90px;
+    margin-left: 0px;
+}
+
+    #registerSubmit:hover {
+        background-color: rgba(0, 0, 0, 0.753);
+    }
+
+body > div > main > div > div > div.col-md-3 > ul {
+    margin-top:300px;
+    margin-bottom:800px;
+    margin-left:-400px;
+    width:500px;
+    font-size: 30px;
+}
+
+body > div > main > div > div > div.col-md-9 {
+    margin-top: -1100px;
+    margin-bottom: 800px;
+    margin-left: 400px;
+    width: 700px;
+    font-size: 30px;
+}
+
+body > div > main > div > div > div.col-md-3 > ul a {
+    color:#000;
+}
+
+
+#profile {
+    background-color: #000;
+    color: #fff;
+}
+
+#email.active {
+    background-color: #000;
+    color:#fff;
+}
+
+#change-password.active {
+    background-color: #000;
+    color: #fff;
+}
+
+#two-factor.active {
+    background-color: #000;
+    color: #fff;
+}
+
+#personal-data.active {
+    background-color: #000;
+    color: #fff;
+}
+
+body > div > main > div > div > div.col-md-9 > h4 {
+    font-size: 33px;
+    background-color: #000;
+    color: #000;
+    width: 1200px;
+    height: 61px;
+    border-radius: 5px;
+    margin-top: -5px;
+    margin-left: -305px;
+    margin-bottom: 40px;
+}
+
+#Username {
+    height: 55px;
+    font-size:25px;
+}
+#Input_PhoneNumber {
+    height: 55px;
+    font-size: 25px;
+}
+
+#update-profile-button {
+    width: 140px;
+    height: 65px;
+    background-color: #000;
+    border: 1px solid #000;
+    box-shadow: -1px 9px 19px -5px rgba(120, 118, 118, 0.652);
+    border-radius: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-family: 'Nanum Myeongjo', serif;
+    padding-top: 4px;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+body > div > main > div > div > div.col-md-3 > ul > li:nth-child(1) {
+    background-color: #000;
+    border-radius: 15px;
+}
+
+body > header > nav > div > div > ul:nth-child(2) > li:nth-child(1) > a {
+    margin-left: 300px;
+}
+
+
+body > header > nav > div > div > ul:nth-child(2) {
+    width: 190px;
+}
+
+    body > header > nav > div > div > ul:nth-child(2) > li.nav-item.acconl {
+        margin-left: 890px;
+        margin-top: -10px;
+    }
+
+.acconl {
+    margin-left: 470px;
+}
+/*body > div > main > div > div.col-md-4 form input {
+        width: 550px;
+        height: 55px;
+        font-size: 30px;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.942);
+        margin-left: 220px;
+    }*/
+/*body > div > main > div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-image: url("https://media.vanityfair.com/photos/5fca7d69e92c635d9828f94d/master/pass/best-books-of-2020.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 150px;
+    margin-bottom: -16px;
+    width:3000px;
+    height: 1900px;
+    margin-left:-940px;
+}*/
+.sec8 .storyinfa {
+    width: 2600px;
+    height: 2700px;
+    border-radius: 25px;
+    border: 0.5px solid #000;
+    text-align: center;
+    margin-left: -930px;
+    margin-top: 50px;
+    font-size: 34px;
+    padding-top: 45px;
+}
+
+.sec8 .storyinfa:hover {
+    background-color: rgba(255, 255, 255, 0.54);
+}
+
+
+/*.sec8 .information .infti:hover {
+    background-color: rgba(24, 23, 23, 0.03);
+}*/
+
+/*   .sec8 .storyinf p {
+            width: 2400px;
+        }
+*/
+.sec8 .storyinf h2 {
+    margin-top: 50px;
+    font-size: 65px;
+}
+
+        .sec8 .storyinf p {
+            font-size: 32px;
+            width: 2200px;
+            text-align: left;
+            margin-left: 70px;
+        }
+
+/*.sec8 .storyinf:hover {
+    background-color: rgba(24, 23, 23, 0.09);
+}*/
+
+    .sec8 .information h2 {
+        margin-top: 40px;
+        font-size: 40px;
+    }
+
+.sec8 .booklink a {
+   
+    color: #000;
+}
+
+.sec8 .btndowlabook {
+    width: 150px;
+    height: 90px;
+    background-color: #000;
+    border: 1px solid #000;
+    box-shadow: -1px 9px 19px -5px rgba(24, 23, 23, 0.09);
+    border-radius: 15px;
+    padding-bottom: 15px;
+    margin-top: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-family: 'Nanum Myeongjo', serif;
+    padding-top: 8px;
+}
+
+    .sec8 .btndowlabook:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .sec8 h2 {
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    .sec8 .btndowlabook a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+
+a {
+    text-decoration: none;
+}
+
+.sec8 .btndowlabook a:hover {
+    text-decoration: none;
+    color: #000;
+}
+    /*.sec8 .information:hover {
+    background-color: rgba(24, 23, 23, 0.09);
+}*/
+    .backbt {
+        background-color: #fff;
+        color: #000;
+        margin-top: 110px;
+        margin-bottom: -100px;
+        margin-left: -765px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+        .backbt .fa-arrow-left-long {
+            background-color: #fff;
+            color: #000;
+            font-size: 55px;
+            margin-right: 240px;
+            /*  background: rgba(255, 255, 255, 0.01);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(0px);
+            -webkit-backdrop-filter: blur(0px);
+            border: 1px solid rgba(255, 255, 255, 0.16);*/
+        }
+
+.usclick.active {
+    background-color:#000;
+    color:#fff;
+}
+
+
+body > header > nav > div > div > ul:nth-child(2) > li:nth-child(2) > form > button {
+    font-size: 27px;
+    margin-top: 10px;
+    width: 150px;
+    height: 60px;
+    background-color: transparent;
+    border: 1px solid #000;
+    box-shadow: -1px 9px 19px -5px rgba(24, 23, 23, 0.09);
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-family: 'Nanum Myeongjo', serif;
+    padding-top: 7px;
+    padding-right: 7px;
+    margin-left: 15px;
+}
+
+
+
+    body > div > main > div.row.pagiion > div:nth-child(1) > a {
+        background-color: #000;
+        border: #000;
+    }
+
+body > div > main > div.row.pagiion > div:nth-child(2) > a {
+    background-color: #000;
+    border: #000;
+}
+
+    body > header > nav > div > div > ul:nth-child(2) > li:nth-child(1) > a {
+        margin-left: 760px;
+        width: 150px;
+        height: 60px;
+        background-color: rgb(0,0,0);
+        border: 1px solid rgb(0,0,0);
+        box-shadow: -1px 9px 19px -5px rgba(24, 23, 23, 0.09);
+        border-radius: 20px;
+        color: #fff !important;
+        font-size: 25px;
+        cursor: pointer;
+        font-weight: 600;
+        font-family: 'Nanum Myeongjo', serif;
+        padding-top: 10px;
+        margin-top: 6px;
+        text-align: center;
+    }
+
+body > header > nav > div > div > ul:nth-child(2) > li:nth-child(2) > a {
+    width: 154px;
+    height: 60px;
+    background-color: transparent;
+    border: 1px solid rgba(24, 23, 23, 0.09);
+    box-shadow: -1px 9px 19px -5px rgba(24, 23, 23, 0.09);
+    border-radius: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-family: 'Nanum Myeongjo', serif;
+    padding-top: 11px;
+    padding-right: -1px;
+    margin-left: 10px;
+    margin-top: 5.5px;
+    text-align: center;
+}
+
+#account > div:nth-child(7) > p:nth-child(1) {
+    display: none;
+}
+
+#account > div:nth-child(7) > p:nth-child(3) {
+    display: none;
+}
+
+.sec9 #customers {
+    width: 2690px;
+    height: 300px;
+    padding: 60px;
+    line-height: 10px;
+    margin-top: 280px;
+    margin-bottom: 600px;
+    margin-left: -790px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.sec9 {
+    height: 1700px;
+    margin-bottom: 100px;
+}
+
+
+.sec9 .detailsbtn {
+    border: 1px solid #000;
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+    border-radius: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 7.5px;
+    padding: 9.5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 130px;
+    height: 77px;
+    margin-left: 57px;
+    font-family: 'Nanum Myeongjo', serif;
+    text-decoration:none;
+}
+
+  .sec9  .detailsbtn:hover {
+        border: 1px solid rgba(24, 23, 23, 0.09);
+        background-color: rgba(24, 23, 23, 0.09);
+    }
+
+
+#customers {
+    font-family: 'Nanum Myeongjo', serif;
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+    #customers td, #customers th {
+        box-shadow: -1px 0px 19px -14px rgba(24, 23, 23, 0.703);
+        border: 1.5px solid rgba(151, 151, 151, 0.614);
+        padding: 35px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 25px;
+        width: 400px;
+        margin-left: -400px;
+    }
+
+#customer thead {
+    width: 470px;
+    text-align: center;
+    background-color: #000;
+    box-shadow: -1px 9px 19px -5px rgba(24, 23, 23, 0.568);
+}
+
+
+#customers > tbody > tr:nth-child(1) > th:nth-child(3) {
+    width: 10%;
+}
+
+#customers > tbody > tr:nth-child(1) > th:nth-child(4) {
+    width: 10%;
+}
+
+#customers > tbody > tr:nth-child(1) > th:nth-child(5) {
+    width: 10%;
+}
+
+#customers > tbody > tr:nth-child(1) {
+    border-radius: 10px;
+}
+.ttex {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#customers td {
+    width: 0px;
+}
+
+#customers tr:hover {
+    background-color: #f2f2f2;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 470px;
+    text-align: center;
+    background-color: #000;
+   /* border-top-left-radius: 25px;
+    border-top-right-radius: 25px;*/
+    height: 80px;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+}
+
+a {
+    text-decoration:none;
+}
+
+.sec9 tr .editbtn {
+    border: 1px solid #eabe0e;
+    width: 130px;
+    height: 47px;
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+    padding: 9.9px;
+    padding-left: 34px;
+    padding-right: 34px;
+    border-radius: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 60px;
+    text-decoration: none;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+    .sec9 tr .editbtn:hover {
+        background-color: #eabe0e;
+        color: #fff;
+    }
+
+.sec9 tr .delbtn {
+    border: 1px solid #E32B2B;
+    width: 130px;
+    height: 47px;
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+    padding: 9.5px;
+    padding-left: 23px;
+    padding-right: 23px;
+    border-radius: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 60px;
+    text-decoration:none;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+    .sec9 tr .delbtn:hover {
+        background-color: #b42020;
+        border: 1px solid #b42020;
+        color: #fff;
+    }
+
+
+
+.sec12 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: left;
+    background-image: url('/images/2cd43b_4649bce7dad04d89b63ba2c8e6233511_mv2_d_2167_1984_s_2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2500px;
+    height: 2100px;
+    margin-top: 200px;
+    margin-bottom:50px;
+    margin-left: -660px;
+}
+
+    .sec12 .arts12 {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        border-radius: 25px;
+        position: static;
+    }
+
+        .sec12 .arts12 img {
+            width: 1300px;
+            height: 390px;
+            box-shadow: -1px 9px 19px -5px rgba(0, 0, 0, 0.75);
+            border-radius: 25px;
+            font-size: 34px;
+            text-align: left;
+            margin-left: 00px;
+            margin-bottom: 30px;
+            position: static;
+            cursor: pointer;
+        }
+
+            /*.sec12 .arts12:hover {
+                background-color: rgb(255, 255, 255,0.5);
+            }*/
+
+            .sec12 .arts12 .arttext h1 {
+                font-size: 45px;
+                margin-top: 25px;
+            }
+
+        .sec12 .arts12 .arttext h3 {
+            font-size: 30px;
+            margin-top: -25px;
+        }
+
+        .sec12 .arts12 .arttext h4 {
+            font-size: 25px;
+        }
+
+        .sec12 .arts12 .h3syb {
+            margin-left: 52.4px;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        .sec12 .arts12 .h3syb2 {
+            padding-top: 20px;
+            margin-left: 51.5px;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        .sec12 .arts12 .psyb {
+            margin-left: -901.5px;
+            margin-top: -10px;
+        }
+        .sec12 .arts12 .psyb2 {
+            margin-left: -1055.5px;
+            margin-top: -10px;
+        }
+        .sec12 .arts12 .arttext p {
+            font-size: 26px;
+            margin-top: 10px;
+     /*       margin-left: -901.5px;*/
+        }
+
+        .sec12 .arts12 .arttext h1  {
+        /*    text-align: left;*/
+            margin-left: 50px;
+         /*   color: #fff;*/
+            font-weight: 600;
+            padding-top: 10px;
+        }
+
+        .sec12 .arts12 .arttext {
+            width: 1270px;
+            height: 360px;
+            background-color: rgb(255, 255, 255,0.9);
+            color: #000;
+            border-radius: 25px;
+            margin-left: -1286px;
+            margin-top: 15px;
+            justify-self: left;
+            text-align: left;
+            cursor: pointer;
+        }
+
+
+            .sec12 .arts12 .arttext:hover {
+                background-color: #fff;
+            }
+
+.sec12 .arts12 .arttext .cut-text2 {
+       width: 1190px;
+       font-size: 24px;
+       line-height: 39px;
+       margin-left: 45px;
+       margin-top: 30px;
+}
+
+            .sec12 .arts12 .arttext .cut-text2 {
+                line-height: 1.9rem;
+                overflow-x: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+               /* -webkit-box-orient: vertical;*/
+                max-height: 6.5rem;
+                margin-left: 52.99px;
+            }
+
+        .sec12 .arts12 .btnsev {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            margin-left: 200px;
+            margin-top: -70px;
+            gap: 40px;
+        }
+
+          /*  .sec12 .arts12 .btnsev .btng {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+            }*/
+
+        .sec12 .arts12 .goindon {
+            width: 400px;
+            height: 150px;
+            background-color: #fff;
+            color: #000;
+            border-radius: 25px;
+            border: 0.2px solid #000;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            margin-top: 105px;
+            margin-left: 140px;
+            font-size: 32px;
+        }
+
+            .sec12 .arts12 .btnsev .dongp {
+                font-size: 35px;
+                margin-top: 160px;
+                /* margin-left: 130px;*/
+            }
+
+            .sec12 .arts12 .btnsev .goingp {
+                font-size: 30px;
+                margin-top: 160px;
+      /*          padding-right: -340px;*/
+            }
+
+        .sec12 .arts12 .btndon {
+            width: 130px;
+            height: 65px;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            border-radius: 25px;
+            font-size: 22px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            /* margin-left: 615px; */
+            margin-top: 225px;
+            cursor: pointer;
+            text-align:center;
+        }
+
+        .sec12 .arts12 .btndongr {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            gap: 12px;
+            width: 130px;
+            height: 65px;
+            background-color: #fff;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 25px;
+            font-size: 22px;
+            padding-top: 16px;
+            padding-left: 29px;
+            /* margin-left: 615px; */
+            margin-top: 225px;
+            color: #000;
+            cursor: pointer;
+        }
+
+        .sec12 .arts12 .btndongr2 {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            gap: 12px;
+            width: 150px;
+            height: 65px;
+            background-color: #fff;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 25px;
+            font-size: 22px;
+            padding-top: 16px;
+            padding-left: 29px;
+            /* margin-left: 615px; */
+            text-decoration: none;
+            margin-top: 225px;
+            color: #000;
+            cursor: pointer;
+        }
+
+           /* .sec12 .arts12 .btndongr h3 {
+                background-color: #fff;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            }*/
+
+                .sec12 .arts12 .btndongr2 h3:hover {
+                    background-color: #000;
+                    color: #fff;
+                }
+
+                .sec12 .arts12 .btndongr a {
+                    color: #000;
+                    text-decoration: none;
+                }
+
+                .sec12 .arts12 .btndongr:hover {
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+                .sec12 .arts12 .btndongr:hover {
+                    background-color: #000;
+                    border: 1px solid #000;
+                    color: #fff;
+                }
+
+        .sec12 .arts12 .btndongr2:hover {
+            background-color: #000;
+            border: 1px solid #000;
+            color: #fff;
+        }
+
+        .sec12 .arts12 .btndon:hover {
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
+
+.sec13c {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.200), rgba(255, 255, 255, 0.200)),url(https://img.freepik.com/premium-photo/green-floating-leaves-flying-leaves-green-leaf-dancing-air-purifier-atmosphere-simple-main-picture_36051-737.jpg?w=2000);
+    background-repeat: repeat;
+    background-size: 2050px 950px;
+    margin-left: -495px;
+    width: 2130px;
+    padding: 150px;
+    justify-self: center;
+    background-color: rgba(219, 218, 218, 0.023);
+    /* border: 3px solid #000; */
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 13%);
+    margin-top: 200px;
+    margin-bottom: 200px;
+    height: 4000px;
+}
+
+    .sec13c .art1s13 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-items: left;
+        padding: 120px;
+        margin-left: 30px;
+        background-color: rgba(0, 0, 0,0.7);
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.132);
+        /*border: 2px solid #000;*/
+        color: #fff;
+    }
+
+.comms13 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 55px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255);
+}
+
+.toprowscom {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 7px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: rgba(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 23px;
+    padding: 50px;
+}
+
+    .toprowscom h5 {
+        margin-left: 40px;
+    }
+
+.bottomcom {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgba(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+    .bottomcom p {
+        margin-left: 40px;
+    }
+
+.addcomns13 {
+    width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+    margin-left: 727px;
+    background-color: #fff;
+    /*border: 0.1px solid #000;*/
+}
+
+.addbtnartc {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.sec13c .sec13ptitle {
+    background-color: #fff;
+    font-size: 35px;
+    padding: 30px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    color: #000;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.132);
+}
+
+.addbtnartc p {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.addbtnartc .addbtns13 {
+    width: 190px;
+    height: 60px;
+    background-color: #000;
+    border-radius: 15px;
+    padding-top: 17px;
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-bottom: 40px;
+    font-size: 23px;
+    margin-left: 110px;
+    margin-top: 29px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+.addbtnartc .addbtns13ch {
+    width: 170px;
+    height: 75px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding-top: 13px;
+    padding-left: 55px;
+    padding-right: 45px;
+    padding-bottom: 44px;
+    font-size: 20px;
+    margin-left: 90px;
+    margin-top: 23px;
+    text-decoration: none;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.132);
+    cursor: pointer;
+    color: #000;
+}
+
+
+
+    .addbtnartc .addbtns13:hover {
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.132);
+        background-color: #fff;
+        color: #000;
+    }
+
+.addbtnartc .addbtns13ch:hover {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.132);
+    /*height: 170px;*/
+    background-color: #000;
+    color: #fff;
+}
+
+
+.sec13ce {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.105), rgba(255, 255, 255, 0.105)),url("https://img.freepik.com/premium-photo/green-floating-leaves-flying-leaves-green-leaf-dancing-air-purifier-atmosphere-simple-main-picture_36051-737.jpg?w=2000");
+    background-repeat: repeat;
+    background-size: 1850px 950px;
+    margin-left: -495px;
+    width: 2130px;
+    padding: 150px;
+    justify-self: center;
+    background-color: rgba(219, 218, 218, 0.023);
+    border: 1px solid #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.132);
+    border: 3px solid #000;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    height: 4200px;
+}
+
+    .sec13ce .art1s13 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-items: left;
+        padding: 90px;
+        margin-left: 30px;
+        background-color: rgba(255, 255, 255);
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.132);
+        color: #000;
+    }
+
+
+    .sec13ce .addbtns13del {
+        width: 120px;
+        height: 60px;
+        background-color: #000;
+        border: 1px solid #000;
+        box-shadow: -1px 9px 19px -5px rgba(24, 23, 23, 0.09);
+        border-radius: 20px;
+        font-size: 25px;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        font-family: 'Nanum Myeongjo', serif;
+        padding-top: 11px;
+        padding-left: 20px;
+        margin-top: 20px;
+    }
+
+    .comms13 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 55px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255);
+    }
+
+.toprowscom {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 7px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: rgba(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 28px;
+    padding: 30px;
+}
+
+    .toprowscom h5 {
+        font-size: 28px;
+        margin-left: 40px;
+    }
+
+.bottomcom {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgba(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 26.5px;
+}
+
+    .bottomcom p {
+        margin-left: 40px;
+    }
+
+.addcomns13 {
+    width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+    margin-left: 1289px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.132);
+    margin-top: 30px;
+    background-color: rgb(255,255,255,0.8);
+    border: 0.1px solid #000;
+}
+
+.addbtnartc {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.sec13ce .sec13ptitle {
+    background-color: #fff;
+    font-size: 35px;
+    padding: 30px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    color: #000;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.132);
+}
+
+.addbtnartc p {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.addbtnartc .addbtns13 {
+    width: 190px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding-top: 17px;
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-bottom: 20px;
+    font-size: 23px;
+    margin-left: 88px;
+    margin-top: 23px;
+    text-decoration: none;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.132);
+    cursor: pointer;
+    color: #000;
+}
+
+    .addbtnartc .addbtns13:hover {
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.132);
+        background-color: #000;
+        color: #fff;
+    }
+
+.sec14 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 720px;
+    position: static;
+}
+
+.addpostform {
+    width: 1300px;
+    height: 1100px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.315), rgba(255, 255, 255, 0.167)),url("https://img.freepik.com/premium-photo/green-floating-leaves-flying-leaves-green-leaf-dancing-air-purifier-atmosphere-simple-main-picture_36051-737.jpg?w=2000");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.132);
+    font-size: 35px;
+    padding: 70px;
+    position: static;
+}
+
+    .addpostform form {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .addpostform form label {
+            font-size: 32px;
+            margin-top: 60px;
+        }
+
+        .addpostform form input {
+            width: 720px;
+            height: 55px;
+            font-size: 35px;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.942);
+            margin-top: 15px;
+        }
+
+        .addpostform form textarea {
+            resize: none;
+            width: 885px;
+            height: 200px;
+            margin-top: 22px;
+            margin-bottom: 28px;
+            padding: 15px;
+            font-size: 30px;
+            border: 1px solid #000;
+            border-radius: 15px;
+        }
+
+    .addpostform .btnaddpost {
+        width: 160px;
+        height: 70px;
+        background-color: #fff;
+        border-radius: 15px;
+        font-size: 23px;
+        margin-top: 12px;
+        margin-bottom: 100px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+        .addpostform .btnaddpost:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+
+
+.sec15er {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1990px;
+    margin-top: 200px;
+    margin-bottom: 120px;
+    margin-left: -38.5px;
+    margin-right: -54px;
+}
+
+    .sec15er .btndetsts19 {
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+        font-size: 23px;
+        border-radius: 15px;
+        font-weight: 400;
+        cursor: pointer;
+        width: 210px;
+        height: 70px;
+        padding: 20px;
+        border: 1px solid #000000;
+        margin-top: 90px; 
+        color: #fff;
+        font-family: 'Nanum Myeongjo', serif;
+        text-decoration: none;
+    }
+
+
+        .sec15er .btndetsts19:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .sec15er .arts15 {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            width: 1200px;
+            padding: 80px;
+            height: 1600px;
+            background-color: #fff;
+            border-radius: 5px;
+            font-size: 30px;
+            text-decoration: none;
+            color: #000;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.132);
+        }
+
+            .sec15er .arts15 a:hover {
+                text-decoration: none;
+                color: #000;
+            }
+
+            .sec15er .arts15 .booklogobooks14 img {
+                width: 80px;
+                height: 80px;
+                margin-top: 400px;
+            }
+
+
+        .sec15er .arts15 h1 {
+            margin-top: 150px;
+            
+        }
+
+        .sec15er .arts15 p {
+            width: 900px;
+            
+        }
+
+
+.sec15er .arts15 .pagnumb {
+    margin-top: 450px;
+    margin-left: 570px;
+}
+
+
+.sec16 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/images/2cd43b_4649bce7dad04d89b63ba2c8e6233511_mv2_d_2167_1984_s_2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2780px;
+    height: 2600px;
+    margin-left: -800px;
+}
+
+    .sec16 .armain1s16 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 1702px;
+        height: 2500px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        font-size: 30px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.180);
+        border: 3.5px solid rgba(0, 0, 0, 0.74);
+        margin-bottom: 140px;
+        margin-right: 30px;
+        margin-top: 300px;
+    }
+
+
+        .sec16 .armain1s16 .artiimgtitl {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            background-color: rgba(255,255,255,0.7);
+            border-radius: 0px;
+            font-size: 30px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.180);
+        }
+
+
+            .sec16 .armain1s16 .artiimgtitl .arttitles {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                background-color: rgb(0, 0, 0,0.95);
+                border-radius: 5px;
+                padding: 30px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.138);
+                color: #fff;
+                font-size: 30px;
+                margin-top: 50px;
+                height: 388px;
+                width: 1260px;
+                gap: 40px;
+            }
+
+
+    .sec16 .artdescr2 {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin-top: 70px;
+    }
+
+
+        .sec16 .artdescr2 p {
+            padding: 90px;
+            margin-top: -50px;
+        }
+
+        .sec16 .artdescr2 .art2parres h3 {
+            font-size: 39px;
+            text-align: center;
+            
+        }
+
+        .sec16 .artdescr2 .bookimgtitl {
+            margin-top: -43px;
+            text-align: center;
+        }
+
+        .sec16 .artdescr2 p {
+            font-size: 35px;
+        }
+
+        .sec16 .artdescr2 .bookimgtitl h3 {
+            text-align: center;
+            margin-left: 38px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .sec16 .artdescr2 .bookimgtitl h4 {
+            text-align: center;
+            margin-left: 25px;
+            margin-top: 20px;
+        }
+
+        .sec16 .artdescr2 .bookimgtitl img {
+            width: 490px;
+            height: 730px;
+            border-radius: 5px;
+            margin-left: 50px;
+        }
+
+
+    .sec16 .armain1s16 .artiimgtitl img {
+        padding: 50px;
+        border-radius: 5px;
+        width: 390px;
+        height: 490px;
+    }
+
+    .sec16 .armain1s16 .artiimgtitl .artdescr2 {
+        padding: 50px;
+    }
+
+
+.sec17 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1900px;
+    margin-top: 165px;
+    margin-bottom: 100px;
+    margin-right: 600px;
+}
+
+    .sec17 .art1s17 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-left: -960px;
+        margin-bottom: 500px;
+    }
+
+        .sec17 .art1s17 .art2ses17 img {
+            width: 3051px;
+            height: 600px;
+            /* border: 1px solid #000; */
+        }
+
+        .sec17 .art1s17 .art6pric {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            /* border: 1px solid #000; */
+        }
+
+            .sec17 .art1s17 .art6pric .pricetextart {
+                width: 1700px;
+                height: 600px;
+                font-size: 30px;
+                margin-left: 150px;
+                margin-top: 80px;
+            }
+
+            .sec17 .art1s17 .art6pric .imgpriart {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 30px;
+                margin-left: 500px;
+                margin-top: -80px;
+            }
+
+                .sec17 .art1s17 .art6pric .imgpriart img {
+                    width: 400px;
+                    height: 400px;
+                }
+
+        .sec17 .art1s17 .art2ses17 {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 34px;
+            margin-top: 30px;
+        }
+
+
+        .sec17 .art1s17 .artmains17 .btncontadd {
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+            font-size: 23px;
+            border-radius: 15px;
+            font-weight: 400;
+            cursor: pointer;
+            width: 160px;
+            height: 80px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            border: 1px solid #000000;
+            font-family: 'Nanum Myeongjo', serif;
+        }
+
+
+            .sec17 .art1s17 .artmains17 .btncontadd:hover {
+                background-color: #fff;
+                color: #000;
+            }
+
+
+
+
+        .sec17 .art1s17 .art45btncs17 .btnvicons17 {
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+            font-size: 23px;
+            border-radius: 15px;
+            font-weight: 400;
+            cursor: pointer;
+            width: 140px;
+            height: 70px;
+            border: 1px solid #000000;
+            font-family: 'Nanum Myeongjo', serif;
+        }
+
+
+            .sec17 .art1s17 .art45btncs17 .btnvicons17:hover {
+                background-color: #fff;
+                color: #000;
+            }
+
+
+    .sec17 .art3ses17 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 3038px;
+        margin-left: -8px;
+        gap: 5px;
+        /* background-color: #000; */
+    }
+
+
+        .sec17 .art3ses17 .storyus {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.138);
+            font-size: 27px;
+            color: #fff;
+        }
+
+            .sec17 .art3ses17 .storyus h3 {
+                color: rgb(0, 0, 0);
+            }
+
+
+            .sec17 .art3ses17 .storyus img {
+                width: 330px;
+                height: 330px;
+                border: 1px solid rgb(255, 255, 255);
+            }
+
+
+    .sec17 .art1s17 .art45btncs17 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+
+
+
+
+
+
+.sec18 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1700px;
+    background-color: #fff;
+    color: #000;
+}
+
+    .sec18 .art1s18 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        color: #000;
+        gap: 55px;
+    }
+
+
+        .sec18 .art1s18 .contartbox {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            font-size: 28px;
+        }
+
+            .sec18 .art1s18 .contartbox img {
+                height: 400px;
+                width: 420px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.708);
+            }
+
+
+            .sec18 .art1s18 .contartbox .btncontsb {
+                background-color: #000000;
+                color: rgb(255, 255, 255);
+                font-size: 23px;
+                border-radius: 15px;
+                font-weight: 400;
+                cursor: pointer;
+                width: 150px;
+                height: 70px;
+                border: 1px solid #000000;
+                padding-top: 16px;
+                padding-left: 15px;
+                text-decoration: none;
+                margin-top: 40px;
+                font-family: 'Nanum Myeongjo', serif;
+            }
+
+                .sec18 .art1s18 .contartbox .btncontsb:hover {
+                    background-color: #fff;
+                    text-decoration: none;
+                    color: #000;
+                }
+
+
+
+
+.sec19 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.115), rgba(255, 255, 255, 0.167)),url("/images/2cd43b_4fe606c7f6784f38b7839c656c3afb94_mv2.png");
+    background-repeat: no-repeat;
+    background-size: 2700px 2700px;
+    height: 2800px;
+/*    margin-right: 200px;*/
+    margin-left: -1700px;
+    margin-bottom: 100px;
+}
+
+    .sec19 .artmains19 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .sec19 .artmains19 .artimgtop {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            width: 1500px;
+            height: 700px;
+            background-color: rgba(255, 255, 255, 0.920);
+            border-radius: 20px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.249);
+            margin-bottom: 150px;
+            margin-top: -120px;
+            margin-left: -390px
+        }
+
+            .sec19 .artmains19 .artimgtop .artimgcus {
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 200px;
+                font-size: 28px;
+                margin-left: -50px;
+            }
+
+            .sec19 .artmains19 .artimgtop .artimgtres {
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: row;
+                background-color: rgba(255, 255, 255, 0.690);
+                border-radius: 20px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.249);
+                width: 1200px;
+                height: 698px;
+                font-size: 28px;
+                padding: 40px;
+            }
+
+                .sec19 .artmains19 .artimgtop .artimgtres h5 {
+                    font-size: 32px;
+                }
+
+                .sec19 a {
+                    text-decoration: none;
+                    color: #000;
+                }
+
+    .sec19 .artmains19 .artimgtop .artimgtres img {
+        width: 570px;
+        height: 700px;
+        margin-left: 80px;
+        margin-top: -40px;
+        margin-bottom: 25px;
+    }
+
+            .sec19 .artmains19 .artimgtop .artimgcus .imgartcuseimg {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+        /*        justify-content: left;
+                align-items: left;*/
+                margin-left: 70px;
+                width: 700px;
+            }
+
+.sec19 .artmains19 .arttitl3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 110px;
+    font-size: 28px;
+}
+
+    .sec19 .artmains19 .artimgtop a:hover {
+        text-decoration: underline;
+    }
+
+    .sec19 .artmains19 .artimgtop .artimgcus .artinfortit {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        font-size: 30px;
+    }
+
+.sec19 .artmains19 .artimgtop .artimgcus .imgartcuseimg img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-left: 100px;
+}
+
+.sec19 .artmains19 .artimgtop .artimgcus .artinfortit {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+    .sec19 .artmains19 .artimgtop .artimgcus .artinfortit h4 {
+        font-size: 32px;
+        margin-bottom: 60px;
+        width: 600px;
+    }
+
+
+    .sec19 .artmains19 .storieslast {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        height: 550px;
+        margin-left: 780px;
+        gap: 100px;
+    }
+
+    .sec19 .artmains19 .storieslast .storypage {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .sec19 .artmains19 .storieslast .storypage .contentpage {
+            width: 310px;
+            height: 430px;
+            text-align: center;
+            box-shadow: -1px 9px 19px -5px rgba(24, 23, 23, 0.568);
+            background-color: #ffffff;
+            border: 0.5px solid rgb(255, 255, 255);
+            border-radius: 20px;
+            font-family: 'Nanum Myeongjo', serif;
+            margin-top: 0px;
+            cursor: pointer;
+        }
+
+            .sec19 .artmains19 .storieslast .storypage .contentpage:hover {
+                background: rgba(255, 255, 255, 0.24);
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+            }
+
+
+            .sec19 .artmains19 .storieslast .storypage .btnslist .btndet {
+                background-color: #000;
+                color: rgb(255, 255, 255);
+                font-size: 23px;
+                border-radius: 15px;
+                font-weight: 400;
+                cursor: pointer;
+                width: 100px;
+                height: 60px;
+                border: 1px solid #000000;
+                text-decoration: none;
+                margin-top: 40px;
+                font-family: 'Nanum Myeongjo', serif;
+                margin-right: 10px;
+            }
+
+
+            .sec19 .artmains19 .storieslast .storypage .btnslist .btndet:hover {
+                text-decoration: none;
+                background-color: #fff;
+                color: #000;
+            }
+
+
+            .sec19 .artmains19 .storieslast .storypage .btnslist .btndet a {
+                color: #fff;
+            }
+
+                .sec19 .artmains19 .storieslast .storypage .btnslist .btndet a:hover {
+                    text-decoration: none;
+                    color: #000;
+                }
+
+
+    .sec19 .btndetsts19 {
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+        font-size: 23px;
+        border-radius: 15px;
+        font-weight: 400;
+        cursor: pointer;
+        width: 150px;
+        height: 90px;
+        padding: 20px;
+        border: 1px solid #000000;
+        margin-top: 40px;
+        margin-left: 2105px;
+        color: #fff;
+        font-family: 'Nanum Myeongjo', serif;
+    }
+
+                .sec19 .btndetsts19:hover {
+                    text-decoration: none;
+                    background-color: #fff;
+                    color: #000;
+                }
+
+
+
+        .sec19 .btndetsts19 a:hover {
+            text-decoration: none;
+            color: #000;
+        }
+
+.sec19 .artmains19 .storieslast .storypage h1 {
+    font-size: 27px;
+    margin-top: 30px;
+}
+
+.sec19 .artmains19 .storieslast .storypage .contentpage .cut-text {
+ /*   width: 255px;
+    font-size: 17px;
+    line-height: 25px;
+    align-self: center;
+    text-align: center;
+    font-style: italic;
+    margin-left: 30px;*/
+    color: #000;
+    line-height: 1.6rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    max-height: 6.5rem;
+}
+
+
+
+
+.sec19 .artparart19 {
+    width: 2700px;
+    height: 800px;
+    padding: 40px;
+    text-align: left;
+    box-shadow: -1px 9px 19px -5px rgba(24, 23, 23, 0.568);
+    background-color: #ffffff;
+    border-radius: 20px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 27px;
+    margin-top: 90px;
+    margin-bottom: 80px;
+    cursor: pointer;
+    margin-left: 890px;
+}
+
+.btnbook {
+    color: #000;
+    text-decoration: none;
+}
+
+    .sec19 .artparart19:hover {
+        background: rgba(255, 255, 255, 0.24);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+
+.sec20 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-left: -805px;
+    /*    background-image: url('/images/580b57fbd9996e24bc43bb62.png');
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    height: 700px;
+    margin-top: 80px;
+    gap: 32px;
+}
+
+    .sec20 a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .sec20 .storypage .btnslist2 {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin-top: 30px;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .sec20 .storypage {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .sec20 .storypage h1 {
+        font-size: 33px;
+    }
+
+    .sec20 .storypage {
+        margin-left: 52px;
+    }
+
+        .sec20 .storypage img:hover {
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+            border: 1px solid #f3c50bd9;
+        }
+
+.sec20 .storypage .btnslist2 .btndet20 {
+    width: 110px;
+    height: 52px;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 15px;
+    font-size: 23px;
+    cursor: pointer;
+    padding-top: 6px;
+    padding-bottom: -10px;
+    padding-left: 2px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    margin-right: 35px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+    .sec20 .storypage .btnslist2 .btndet20:hover {
+        background-color: #fff;
+        border: 1px solid #000;
+        color: #000;
+        text-decoration: none;
+    }
+
+        .sec20 .storypage img {
+            width: 320px;
+            height: 480px;
+            border-radius: 5px;
+        }
+
+
+.sec21 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.215), rgba(255, 255, 255, 0.215)),url(/images/2cd43b_1d4eab3ae3cc4cef8432304439bed3b6_mv2_d_3376_3516_s_4_2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 150px;
+    align-items: center;
+    height: 2000px;
+    margin-bottom: 200px;
+    margin-left: -860px;
+}
+
+    .sec21 .art1sec21 {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        padding: 40px;
+        text-align: left;
+        width: 2820px;
+        border: 3px solid #f3c50bd9;
+        box-shadow: -1px 9px 19px -5px rgba(24, 23, 23, 0.568);
+        background-color: rgb(255,255,255,0.89);
+        font-size: 32px;
+        border-radius: 20px;
+        font-family: 'Nanum Myeongjo', serif;
+        margin-top: -200px;
+        margin-bottom: 100px;
+        gap: 20px;
+        cursor: pointer;
+    }
+
+        .sec21 .art1sec21:hover {
+            box-shadow: -1px 9px 19px -5px rgba(24, 23, 23, 0.668);
+            background-color: rgb(255,255,255);
+        }
+
+        .sec21 .art2sec21:hover {
+            box-shadow: -1px 9px 19px -5px rgba(24, 23, 23, 0.668);
+            background-color: rgb(255,255,255);
+        }
+
+        .sec21 .art1sec21 .headar21 {
+            font-weight: 600;
+        }
+
+        .sec21 .art1sec21 article img {
+            width: 200px;
+            height: 200px;
+        }
+
+    .sec21 .art2sec21 {
+        width: 2750px;
+        height: 1180px;
+        border: 1px solid rgb(255, 255, 255);
+        box-shadow: -1px 9px 19px -5px rgba(24, 23, 23, 0.568);
+        background-color: rgb(255,255,255,0.89);
+        border-radius: 20px;
+        font-family: 'Nanum Myeongjo', serif;
+        font-size: 32px;
+        margin-bottom: 100px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+        .sec21 .art2sec21 p {
+            width: 2580px;
+            text-align: left;
+            margin-left: 100px;
+            margin-top: 55px;
+        }
+
+        .sec21 .art2sec21 .headar21 {
+            font-weight: 600;
+        }
+
+
+
+
+
+                .ui-datepicker table {
+                    width: 900px;
+                    background-color: #f3c50bd9;
+                    border: 1px solid #fff;
+                    color: #fff;
+                    font-size: 14em;
+                }
+
+#ui-datepicker-div > div {
+    background-color: #fff;
+}
+
+input[type=checkbox] {
+    background-color: #fff;
+    color: #000;
+}
+
+    input[type=checkbox]:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+    #DonationAgreement {
+        background-color: #fff;
+        color: #000;
+    }
+
+        #DonationAgreement:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+#slides .slide img {
+    width:3000px;
+    height:180px;
+}
+
+
+body > div > main > div.row.pagiion > div:nth-child(1):hover {
+    color: #fff;
+}
+
+
+.bottohom {
+    width: 2076px;
+    height: 800px;
+    background-image: url("/images/2cd43b_8aa164904e794d6398c000106ec4e29f_mv2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -2px;
+}
+
+.containeryu6 {
+    width: 900px;
+    height: 500px;
+    /*    position: absolute;*/
+    transform: translate(-50%,-50%);
+    /* top: 50%;
+    left: 50%;*/
+    overflow: hidden;
+    border: 10px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: -1px 5px 15px black;
+    margin-top: -300px;
+    margin-left: -200px;
+    margin-right: 300px;
+    position: static;
+}
+
+/*Area of images*/
+.wrapperio8 {
+    width: 100%;
+    display: flex;
+    animation: slide 11s infinite;
+}
+
+img {
+    width: 100%;
+}
+
+/*Animation activated by keyframes*/
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    55% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-200%);
+    }
+
+    80% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+.polygon {
+    overflow: hidden;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    background: url('https://images5.alphacoders.com/445/445906.jpg');
+    background-size: cover;
+    background-position: center center;
+    cursor: url('http://findicons.com/files/icons/385/game_stars/64/mario.png') 32 32, pointer;
+    position: relative;
+}
+
+.bullet {
+    height: 70px;
+    width: 70px;
+    margin-right: 5px;
+    margin-top: 15px;
+    position: absolute;
+    top: -50%;
+    left: 0;
+    background: url('http://findicons.com/files/icons/2258/addictive_flavour/48/super_mario_rocket.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.polygon .bullet:hover {
+    border-radius: 0;
+    margin: 0;
+    height: 400px;
+    width: 800px;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ff0000;
+    cursor: default;
+    animation: anime1 0s !important;
+    animation: anime2 0s !important;
+    animation: anime3 0s !important;
+    animation: anime4 0s !important;
+    animation: anime5 0s !important;
+    animation: anime6 0s !important;
+    animation: anime7 0s !important;
+    animation: anime8 0s !important;
+}
+
+    .polygon .bullet:hover:before {
+        content: "BAMMM!";
+        width: 600px;
+        color: #ffffff;
+    }
+
+.polygon:hover .bullet--1 {
+    animation: anime1 6s 0s linear infinite;
+}
+
+.polygon:hover .bullet--2 {
+    animation: anime2 4s 2s linear infinite;
+}
+
+.polygon:hover .bullet--3 {
+    animation: anime3 3s 3s linear infinite;
+}
+
+.polygon:hover .bullet--4 {
+    animation: anime4 6s 4s linear infinite;
+}
+
+.polygon:hover .bullet--5 {
+    animation: anime5 4s 5s linear infinite;
+}
+
+.polygon:hover .bullet--6 {
+    animation: anime2 3s 6s linear infinite;
+}
+
+.polygon:hover .bullet--7 {
+    animation: anime7 2s 8s linear infinite;
+}
+
+.polygon:hover .bullet--8 {
+    animation: anime4 5s 8s linear infinite;
+}
+
+.polygon:hover .bullet--9 {
+    animation: anime8 3s 9s linear infinite;
+}
+
+.polygon:hover .bullet--10 {
+    animation: anime6 4s 10s linear infinite;
+}
+
+@-webkit-keyframes anime1 {
+    0% {
+        top: 260px;
+        left: 110%;
+    }
+
+    100% {
+        top: 260px;
+        right: 110%;
+    }
+}
+
+@-webkit-keyframes anime2 {
+    0% {
+        top: 50px;
+        left: 110%;
+    }
+
+    100% {
+        top: 50px;
+        right: 110%;
+    }
+}
+
+@-webkit-keyframes anime3 {
+    0% {
+        top: 150px;
+        left: 110%;
+    }
+
+    100% {
+        top: 200px;
+        right: 110%;
+    }
+}
+
+@-webkit-keyframes anime4 {
+    0% {
+        top: 300px;
+        left: 110%;
+    }
+
+    100% {
+        top: 200px;
+        right: 110%;
+    }
+}
+
+@-webkit-keyframes anime5 {
+    0% {
+        top: 150px;
+        left: 110%;
+    }
+
+    100% {
+        top: 150px;
+        right: 110%;
+    }
+}
+
+@-webkit-keyframes anime6 {
+    0% {
+        top: 50px;
+        left: 110%;
+    }
+
+    100% {
+        top: 250px;
+        right: 110%;
+    }
+}
+
+@-webkit-keyframes anime7 {
+    0% {
+        top: 300px;
+        left: 110%;
+    }
+
+    100% {
+        top: 0;
+        right: 110%;
+    }
+}
+
+@-webkit-keyframes anime8 {
+    0% {
+        top: 0;
+        left: 110%;
+    }
+
+    100% {
+        top: 300px;
+        right: 110%;
+    }
+}
+
+
+
+.fa-heart {
+    font-size: 35px;
+    cursor:pointer;
+    margin-top: -10px;
+}
+
+.fa-xmark {
+    font-size: 35px;
+    cursor: pointer;
+    margin-top: -50px;
+    justify-self:center;
+} 
+
+
+
+
+
+
+footer {
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border: 0.5px solid #00000015;
+    background-color: rgba(255, 255, 255, 0.755);
+    height: 110px;
+    box-shadow: -1px 9px 19px -5px rgba(199, 198, 198, 0.652);
+    color: hsl(0, 0%, 0%);
+    text-align: center;
+    font-size: 23px;
+    padding-top: 40px;
+    font-weight: 600;
+}
+
+
+/*a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}*/
+
+/* Provide sufficient contrast against white background */
+/*a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}*/
+
+/* Sticky footer styles
+-------------------------------------------------- */
+/*html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}*/
+
+/* Sticky footer styles
+-------------------------------------------------- */
+/*html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {*/
+  /* Margin bottom by footer height */
+  /*margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;*/ /* Vertically center the text there */
+/*}*/
+
