@@ -1,0 +1,81 @@
+﻿@model AddEventFormModel
+
+<label asp-for="Title"></label>
+<input asp-for="Title" type="text" />
+<span asp-validation-for="Title"></span>
+
+<label asp-for="SubTitle"></label>
+<input asp-for="SubTitle" type="text" />
+<span asp-validation-for="SubTitle"></span>
+
+<label asp-for="BookTitle"></label>
+<input asp-for="BookTitle" type="text" />
+<span asp-validation-for="BookTitle"></span>
+
+
+<label asp-for="ImageUrl"></label>
+<input asp-for="ImageUrl" type="text" />
+
+<label asp-for="GuestAuthor"></label>
+<input asp-for="GuestAuthor" type="text" />
+<span asp-validation-for="GuestAuthor"></span>
+
+<label asp-for="GuestAuthorImage"></label>
+<input asp-for="GuestAuthorImage" type="text" />
+<span asp-validation-for="GuestAuthorImage"></span>
+
+<label asp-for="StartTime"></label>
+<input asp-for="StartTime" type="text" />
+<span asp-validation-for="StartTime"></span>
+
+<label asp-for="EndTime"></label>
+<input asp-for="EndTime" type="text" />
+<span asp-validation-for="EndTime"></span>
+
+
+<div class="form-group">
+    <label asp-for="Date" class="control-label"></label>
+    <input asp-for="Date" type="date" id="datepicker"  class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+    <span asp-validation-for="Date" class="text-danger"></span>
+</div>
+@section Scripts
+{
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#datepicker").datepicker();
+        });
+    </script>
+}
+
+<label asp-for="BookStock"></label>
+<input asp-for="BookStock" type="text" />
+<span asp-validation-for="BookStock"></span>
+
+<label asp-for="Address"></label>
+<input asp-for="Address" type="text" />
+<span asp-validation-for="Address"></span>
+
+<label asp-for="Description"></label>
+<textarea asp-for="Description"></textarea>
+<span asp-validation-for="Description"></span>
+
+<label asp-for="BookResume"></label>
+<textarea asp-for="BookResume"></textarea>
+<span asp-validation-for="BookResume"></span>
+
+<label asp-for="BookLinkDw"></label>
+<input asp-for="BookLinkDw" type="text" />
+<span asp-validation-for="BookLinkDw" class="small text-dark"></span>
+<h1></h1>
+
+<div class="form-group">
+    <label asp-for="BookPdfFil" class="control-label"></label>
+    <div class="custom-file">
+        <input asp-for="BookPdfFil" class="custom-file-input" id="customFile">
+        <label class="custom-file-label" for="customFile">Choose File</label>
+    </div>
+    <span asp-validation-for="BookPdfFil" class="text-danger"></span>
+</div>

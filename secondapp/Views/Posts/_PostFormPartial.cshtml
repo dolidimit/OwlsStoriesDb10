@@ -1,0 +1,8 @@
+﻿@model AddPostFormModel
+
+<label asp-for="PostTopic">Topic</label>
+<input asp-for="PostTopic" type="text" />
+<span asp-validation-for="PostTopic"></span>
+
+<label asp-for="PostContent">Content</label>
+<textarea asp-for="PostContent"></textarea>

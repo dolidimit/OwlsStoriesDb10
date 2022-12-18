@@ -1,0 +1,41 @@
+﻿@model StoriesServiceModel
+
+@{
+    ViewData["Title"] = "Details Story";
+}
+
+<section class="sec8">
+    <div class="backbt">
+        <a smooth="true" href="javascript:history.back()"><i class="fa-solid fa-x"></i></a>
+    </div>
+    <article class="information">
+        <article class="imgcon">
+            @if (Model.ImageUrl == null)
+            {
+                <img src="/images/580b57fbd9996e24bc43bb62.png" />
+            }
+            else
+            {
+                <img src=@Model.ImageUrl />
+            }
+        </article>
+        <article class="infti">
+            <h2>Title</h2>
+            <p>@Model.Title</p>
+            <h2>Genre</h2>
+            <p>@Model.Genre</p>
+            <h2>Topic</h2>
+            <p>@Model.Topic</p>
+            <h2>Author</h2>
+            <p>@Model.Pseudonym</p>
+            <h2>Age</h2>
+            <p>@Model.Age</p>
+        </article>
+    </article>
+    <article class="storyinf">
+        <h2>@Model.Title</h2>
+        <p>
+            @Model.StoryText
+    </p>
+</article>
+</section>

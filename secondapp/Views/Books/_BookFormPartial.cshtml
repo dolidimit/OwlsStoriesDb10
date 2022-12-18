@@ -1,0 +1,49 @@
+﻿@model AddBookFormModel
+
+<label asp-for="Title">Heading</label>
+<input asp-for="Title" type="text" />
+<span asp-validation-for="Title" class="small text-danger"></span>
+<h1></h1>
+
+<label asp-for="RTitle">Display Title</label>
+<input asp-for="RTitle" type="text" />
+<span asp-validation-for="RTitle" class="small text-danger"></span>
+<h1></h1>
+
+<label asp-for="ImageUrl">ImageUrl</label>
+<input asp-for="ImageUrl" type="text" />
+<h1></h1>
+
+<label asp-for="Topic">Topic</label>
+<input asp-for="Topic" type="text" />
+<span asp-validation-for="Topic" class="small text-dark"></span>
+<h1></h1>
+
+<label asp-for="Author">Author</label>
+<input asp-for="Author" type="text" />
+<span asp-validation-for="Author" class="small text-dark"></span>
+<h1></h1>
+
+<label asp-for="Pages">Number of Pages</label>
+<input asp-for="Pages" type="text" />
+<span asp-validation-for="Pages" class="small text-dark"></span>
+<h1></h1>
+
+<label asp-for="StoryCon"></label>
+<textarea id="w3review" asp-for="StoryCon"></textarea>
+<span asp-validation-for="StoryCon" class="small text-dark"></span>
+<h1></h1>
+
+<label asp-for="BookLinkDw"></label>
+<input asp-for="BookLinkDw" type="text" />
+<span asp-validation-for="BookLinkDw" class="small text-dark"></span>
+<h1></h1>
+
+<div class="form-group">
+    <label asp-for="BookPdfFil" class="control-label"></label>
+    <div class="custom-file">
+        <input asp-for="BookPdfFil" class="custom-file-input" id="customFile">
+        <label class="custom-file-label" for="customFile">Choose File</label>
+    </div>
+    <span asp-validation-for="BookPdfFil" class="text-danger"></span>
+</div>

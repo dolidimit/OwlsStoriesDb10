@@ -1,0 +1,39 @@
+﻿@model AddStoryFormModel
+
+<label asp-for="Title">Title</label>
+<input asp-for="Title" type="text" />
+<span asp-validation-for="Title"></span>
+
+<label asp-for="GenreId"></label>
+<select asp-for="GenreId">
+    @foreach (var genres in Model.Genres)
+    {
+        <option value="@genres.Id">@genres.Name</option>
+    }
+</select>
+
+<label asp-for="ImageUrl">ImageUrl</label>
+<input asp-for="ImageUrl" type="text" />
+
+<label asp-for="Topic">Topic</label>
+<input asp-for="Topic" type="text" />
+<span asp-validation-for="Topic"></span>
+
+<label asp-for="Pseudonym">Pseudonym</label>
+<input asp-for="Pseudonym" type="text" />
+<span asp-validation-for="Pseudonym"></span>
+<span>(Please, try to use one pseudonym.)</span>
+
+
+<label asp-for="Age">Age</label>
+<input asp-for="Age" type="text" />
+<span asp-validation-for="Age"></span>
+
+<label asp-for="Public">Public</label>
+<input asp-for="Public" type="text" />
+<span asp-validation-for="Public"></span>
+<span>(Checking "yes" in the public field, will allow us to display your story in the Stories page.)</span>
+
+<label asp-for="StoryText">StoryText</label>
+<textarea asp-for="StoryText"></textarea>
+<span asp-validation-for="StoryText"></span>

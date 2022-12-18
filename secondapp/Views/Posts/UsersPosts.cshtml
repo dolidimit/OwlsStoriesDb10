@@ -1,0 +1,94 @@
+﻿@model AllQueryPostsModel
+@using System.Security.Claims;
+
+@{
+    ViewData["Title"] = "User Posts";
+}
+
+
+
+<div class="row sec13ce">
+    <form method="GET" class="searchtiom">
+        <div>
+            <label asp-for="SearchTerm"></label>
+            <input asp-for="SearchTerm" />
+        </div>
+
+    </form>
+    <p class="sec13ptitle">Welcome to the History Page of your posts.</p>
+
+    @if (!Model.Posts.Any())
+    {
+        <h2 class="titlepost">
+
+            You have no posts yet.
+        </h2>
+    }
+    else
+    {
+        @foreach (var sto in Model.Posts)
+        {
+            DateTime time = DateTime.Now;
+
+            <article lass="art1s13">
+                <article class="comms13">
+                    <article class="toprowscom">
+                        <h5>Topic: @sto.PostTopic</h5>
+                        <h5>Date: @sto.PCurrentTime</h5>
+                        <h5>email: @sto.UserEmailC</h5>
+                        @*<h5>FullName: Vesiyy Tyjllo</h5>*@
+                    </article>
+                    <article class="bottomcom">
+                        <p>
+                            @sto.PostContent
+                        </p>
+                    </article>
+
+                    <a smooth="true" asp-controller="Posts" asp-action="Delete" asp-route-id="@sto.Id"
+                       class="addbtns13del" onClick="return confirm('Please, confirm the delete call.');">Delete</a>
+                </article>
+            </article>
+
+
+        }
+
+        <artcle class="addcomns13">
+            <article class="addbtnartc">
+                <p>email: @this.User.FindFirst(ClaimTypes.Email).Value</p>
+                <a smooth="true" asp-controller="Posts" asp-action="AddPost" class="addbtns13">Post</a>
+            </article>
+        </artcle>
+    }
+
+
+    @{
+        var prevpage = Model.CurrentPage - 1;
+
+        if (prevpage < 1)
+        {
+            prevpage = 1;
+        }
+
+        var maxpag = Math.Ceiling((double)Model.TotalPosts / AllQueryPostsModel.PostsPerPage);
+    }
+
+
+</div>
+
+<div class="row pagiion">
+    <div class="col-md-6">
+        <a class="btn btn-info  @(Model.CurrentPage == 1 ? "disabled" : string.Empty)"
+           asp-controller="Posts"
+           asp-action="UserPosts"
+           asp-route-currentPage="@prevpage"
+           asp-route-searchTerm="@(Model.SearchTerm)">|<</a>
+    </div>
+    <div class="col-md-6">
+        <a class="btn btn-info  @(Model.CurrentPage == maxpag  ? "disabled" : string.Empty)"
+           asp-controller="Posts"
+           asp-action="UserPosts"
+           asp-route-currentPage="@(Model.CurrentPage + 1)"
+           asp-route-searchTerm="@(Model.SearchTerm)">>|</a>
+    </div>
+
+</div>

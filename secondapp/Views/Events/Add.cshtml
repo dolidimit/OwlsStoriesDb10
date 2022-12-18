@@ -1,0 +1,19 @@
+﻿@model AddEventFormModel
+
+@{
+    ViewData["Title"] = "Add Event";
+}
+
+<div class="row sec4ev">
+
+    <div class="col-sm-12 offset-lg-2 col-lg-8 offset-xl-3 col-xl-6 addevent">
+        <form method="post" enctype="multipart/form-data">
+            <h1>Admin Add Event</h1>
+            <partial name="_EventFormPartial" model="@Model" />
+
+            <input class="btnadd" type="submit" value="Add" />
+        </form>
+    </div>
+</div>
+
+

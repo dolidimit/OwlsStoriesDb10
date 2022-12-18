@@ -1,0 +1,30 @@
+﻿@model BooksServiceModel
+
+@{
+    ViewData["Title"] = "Details Admin Book";
+}
+
+<section class="sec8">
+    <article class="storyinfa">
+        <h2>Title</h2>
+        <p>@Model.Title</p>
+        <h2>Topic</h2>
+        <p>@Model.Topic</p>
+        <h2>Author</h2>
+        <p>@Model.Author</p>
+        <h2>Pages</h2>
+        <p>@Model.Pages</p>
+        <h2>Purchase Link</h2>
+        <p><h3 class="booklink"><a href=@Model.BookLinkDw target="_blank">Purchase Book From here</a></h3></p>
+        <h2>Resume</h2>
+        <p>
+            @Model.StoryCon
+        </p>
+
+       
+
+        <a class="btndowlabook" href="@Model.BookPdf" target="_blank">Download Book</a>
+
+    </article>
+</section>
+

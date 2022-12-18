@@ -1,0 +1,42 @@
+﻿@model AdminAddStoryModel
+
+@{
+    ViewData["Title"] = "Edit User's Story";
+}
+
+<div class="row sec4">
+    <div class="col-sm-12 offset-lg-2 col-lg-8 offset-xl-3 col-xl-6 addstory addbookba">
+        <form method="post">
+            <h1>Edit User's story</h1>
+            <label asp-for="Title">Title</label>
+            <input asp-for="Title" type="text" />
+            <span asp-validation-for="Title"></span>
+
+            <label asp-for="GenreId"></label>
+            <select asp-for="GenreId">
+                @foreach (var genres in Model.Genres)
+                {
+                    <option value="@genres.Id">@genres.Name</option>
+                }
+            </select>
+
+            <label asp-for="ImageUrl">ImageUrl</label>
+            <input asp-for="ImageUrl" type="text" />
+
+            <label asp-for="Topic">Topic</label>
+            <input asp-for="Topic" type="text" />
+            <span asp-validation-for="Topic"></span>
+
+            <label asp-for="Pseudonym">Pseudonym</label>
+            <input asp-for="Pseudonym" type="text" />
+            <span asp-validation-for="Pseudonym"></span>
+
+            <label asp-for="StoryText">StoryText</label>
+            <textarea asp-for="StoryText"></textarea>
+            <span asp-validation-for="StoryText"></span>
+
+            <input class="btnadd" type="submit" value="Edit" />
+        </form>
+    </div>
+</div>
+

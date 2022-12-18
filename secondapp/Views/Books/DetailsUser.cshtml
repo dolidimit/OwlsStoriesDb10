@@ -1,0 +1,42 @@
+﻿@model BooksServiceModel
+
+@{
+    ViewData["Title"] = "Details Book User";
+}
+
+<section class="sec8">
+    <div class="backbt">
+        <a smooth="true" href="javascript:history.back()"><i class="fa-solid fa-x"></i></a>
+    </div>
+    <article class="information">
+        <article class="imgcon2">
+            <img src=@Model.ImageUrl />
+        </article>
+        <article class="infti">
+            <h2>Title</h2>      
+            <p>@Model.RTitle</p>
+            <h2>Topic</h2>
+            <p>@Model.Topic</p>
+            <h2>Author</h2>
+            <p>@Model.Author</p>
+            <h2>Pages</h2>
+            <p>@Model.Pages</p>
+            <h2>Purchase Link</h2>
+            <p><h3 class="booklink"><a href=@Model.BookLinkDw target="_blank">Purchase Book From here</a></h3></p>
+
+
+
+        </article>
+        <a class="btndowlabook" href="@Model.BookPdf" target="_blank">Download Book</a>
+    </article>
+    <article class="storyinf">
+        <h2>@Model.Title</h2>
+        <h3>Resume</h3>
+        <p>
+            @Model.StoryCon
+            
+        </p>
+
+
+    </article>
+</section>

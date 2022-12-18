@@ -1,0 +1,98 @@
+﻿@model AllQueryFavouritesModel
+
+@{
+    ViewData["Title"] = "Favourite Books";
+}
+
+
+<div class="row sec2">
+
+    @if (!Model.FavBooks.Any())
+    {
+        <h2 class="titlepost">You have no favourites yet.</h2>
+    }
+    else
+    {
+        @foreach (var st in Model.FavBooks)
+        {
+
+
+            @if (st.FavBookLink == null)
+            {
+                <article>
+                    <a smooth="true" asp-controller="Favourites" asp-action="Details" asp-route-id="@st.Id">
+                        <article class="storypage">
+                            <article class="contentpage">
+                                <h1>@st.FavTitle</h1>
+                                <p class="cut-text">
+                                    @st.FavCon
+                                </p>
+                            </article>
+                            <article class="btnslist6">
+                                <a smooth="true" asp-controller="Favourites" asp-action="Details" asp-route-id="@st.Id" class="btndetf3">Details</a>
+                                <a smooth="true" asp-controller="Favourites" asp-action="Delete" asp-route-id="@st.Id" class="btndetf4"
+                                   onClick="return confirm('Please, confirm the delete call.');">Remove</a>
+                            </article>
+                            @*<img src="/images/healthy-living (1).png" />*@
+                        </article>
+
+                    </a>
+
+                </article>
+            }
+            else
+            {
+                <article class="bookfavt">
+                    <a smooth="true" asp-controller="Favourites" asp-action="Details" asp-route-id="@st.Id">
+                        <article class="storypage">
+                            <h1>@st.FavTitle</h1>
+                            <article class="contentpage">
+                                <img src=@st.FavImgUrl />
+                            </article>
+
+                            <article class="btnslist6">
+                                <a smooth="true" asp-controller="Favourites" asp-action="Details" asp-route-id="@st.Id" class="btndetf3">Details</a>
+                                <a smooth="true" asp-controller="Favourites" asp-action="Delete" asp-route-id="@st.Id" class="btndetf4"
+                                   onClick="return confirm('Please, confirm the delete call.');">Remove</a>
+                            </article>
+                            
+                        </article>
+
+                    </a>
+                </article>
+            }
+
+        }
+
+    }
+
+    @{
+        var prevpage = Model.CurrentPage - 1;
+
+        if (prevpage < 1)
+        {
+            prevpage = 1;
+        }
+
+        var maxpag = Math.Ceiling((double)Model.TotalFavBooks / AllQueryFavouritesModel.FavBooksPerPage);
+    }
+
+</div>
+
+<div class="row pagiion">
+    <div class="col-md-6">
+        <a class="btn btn-info  @(Model.CurrentPage == 1 ? "disabled" : string.Empty)"
+           asp-controller="Favourites"
+           asp-action="All"
+           asp-route-currentPage="@prevpage"
+           asp-route-searchTerm="@(Model.SearchTerm)">|<</a>
+    </div>
+    <div class="col-md-6">
+        <a class="btn btn-info  @(Model.CurrentPage == maxpag  ? "disabled" : string.Empty)"
+           asp-controller="Favourites"
+           asp-action="All"
+           asp-route-currentPage="@(Model.CurrentPage + 1)"
+           asp-route-searchTerm="@(Model.SearchTerm)">>|</a>
+    </div>
+
+</div>

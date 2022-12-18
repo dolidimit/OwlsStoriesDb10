@@ -1,0 +1,170 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@using secondapp.Data
+@using secondapp.Data.Models;
+@using System.Security.Claims;
+@using Microsoft.AspNetCore.Http;
+@using static secondapp.Data.WebConstants;
+
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - secondapp</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                 <article class="booklogo">
+                     <img src="/images/owl (2).png"/>
+                 </article>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+
+
+
+
+
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            var usern = User.IsInRole(WebConstants.AdministratorRoleName);
+
+                            if (usern)
+                            {
+                                <li class="nav-item">
+                                    <a smooth="true" class="nav-link text-dark usclick" asp-area="" asp-controller="Books" asp-action="PublicBooks">Books</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a smooth="true" class="nav-link text-dark usclick" asp-area="" asp-controller="Books" asp-action="AllBooks">Book Data</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a smooth="true" class="nav-link text-dark usclick" asp-area="" asp-controller="Admins" asp-action="AllStories">Story Data</a>
+                                </li>
+                                <li class="nav-item sign">
+                                    <a smooth="true" class="nav-link text-dark usclick" asp-area="" asp-controller="Events" asp-action="AllEvents">Events Data</a>
+                                </li>
+                                <li class="nav-item sign">
+                                    <a smooth="true" class="nav-link text-dark usclick" asp-area="" asp-controller="Admins" asp-action="AllPosts">Posts Data</a>
+                                </li>
+                                <li class="nav-item sign">
+                                    <a smooth="true" class="nav-link text-dark usclick" asp-area="" asp-controller="Books" asp-action="Add">Add Book</a>
+                                </li>
+                                <li class="nav-item sign">
+                                    <a smooth="true" class="nav-link text-dark usclick" asp-area="" asp-controller="Events" asp-action="Add">Add Event</a>
+                                </li>
+
+                            }
+
+                            else
+                            {
+
+                                <li class="nav-item">
+                                    <a smooth="true" class="nav-link show text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a smooth="true" class="nav-link show text-dark" asp-area="" asp-controller="Home" asp-action="Info">About</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a smooth="true" class="nav-link show text-dark usclick" asp-area="" asp-controller="Books" asp-action="All">Books</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a smooth="true" class="nav-link show text-dark usclick" asp-area="" asp-controller="Events" asp-action="PublicEventsUser">Events</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a smooth="true" class="nav-link show text-dark usclick" asp-area="" asp-controller="Admins" asp-action="PublicStoriesUser">Stories</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a smooth="true" class="nav-link text-dark usclick" asp-area="" asp-controller="Posts" asp-action="AllPosts">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a smooth="true" class="nav-link text-dark usclick" asp-area="" asp-controller="Stories" asp-action="Add">Post Story</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a smooth="true" class="nav-link text-dark usclick" asp-area="" asp-controller="Stories" asp-action="AllMine">Your Stories</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a smooth="true" class="nav-link text-dark usclick" asp-area="" asp-controller="Users" asp-action="BookStories">Your Book</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a smooth="true" class="nav-link text-dark usclick" asp-area="" asp-controller="Favourites" asp-action="All">Favourites</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a smooth="true" class="nav-link text-dark usclick" asp-area="" asp-controller="Users" asp-action="Index">Your Page</a>
+                                </li>
+
+
+                            }
+
+                        }
+                        else if (!SignInManager.IsSignedIn(User))
+                        {
+                            <li class="nav-item">
+                                <a smooth="true" class="nav-link show text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a smooth="true" class="nav-link show text-dark" asp-area="" asp-controller="Home" asp-action="Info">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a smooth="true" class="nav-link show text-dark usclick" asp-area="" asp-controller="Books" asp-action="PublicBooks">Books</a>
+                            </li>
+                            <li class="nav-item">
+                                <a smooth="true" class="nav-link show text-dark usclick" asp-area="" asp-controller="Events" asp-action="PublicEvents">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a smooth="true" class="nav-link show text-dark usclick" asp-area="" asp-controller="Admins" asp-action="PublicStories">Stories</a>
+                            </li>
+
+                          
+                        }
+                       
+                    </ul>
+                    
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @if (SignInManager.IsSignedIn(User) && !User.IsInRole(WebConstants.AdministratorRoleName)){
+            <aside>
+                <a smooth="true" asp-area="" asp-controller="Books" asp-action="All"><i class="fa-solid fa-book"></i></a>
+                <a smooth="true" asp-area="" asp-controller="Admins" asp-action="PublicStoriesUser"><i class="fa-solid fa-pen-fancy"></i></a>
+                <a smooth="true" asp-area="" asp-controller="Stories" asp-action="AllMine"><i class="fa-solid fa-note-sticky"></i></a>
+                <a smooth="true" asp-area="" asp-controller="Favourites" asp-action="All"><i class="fa-solid fa-heart"></i></a>
+                <a smooth="true" asp-area="" asp-controller="Posts" asp-action="AllPosts"><i class="fa-solid fa-comment"></i></a>
+
+            </aside>
+            }
+
+
+            <article class="topsign">
+                <a smooth="true" href="#"><i class="fa-solid fa-angle-up"></i></a>
+            </article>
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; All Rights Reserved to Owl's Stories @DateTime.UtcNow.Year
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

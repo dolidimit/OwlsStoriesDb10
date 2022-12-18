@@ -1,0 +1,39 @@
+﻿@model EventsServiceModel
+
+@{
+    ViewData["Title"] = "Details Admin Event";
+}
+
+<section class="sec8">
+
+    <article class="storyinfa">
+        <h2>Title</h2>
+        <p>@Model.Title</p>
+        <h2>SubTitle</h2>
+        <p>@Model.SubTitle</p>
+        <h2>Book Title</h2>
+        <p>@Model.BookTitle</p>
+        <h2>Event Date</h2>
+        <p>@Model.Date</p>
+        <h2>Start Time</h2>
+        <p>@Model.StartTime</p>
+        <h2>End Time</h2>
+        <p>@Model.EndTime</p>
+        <h2>Guest Author</h2>
+        <p>@Model.GuestAuthor</p>
+        <h2>Guest Author ImageUrl</h2>
+        <p>@Model.GuestAuthorImage</p>
+        <h2>Number of Books</h2>
+        <p>@Model.BookStock</p>
+        <h2>Book's Resume</h2>
+        <p>@Model.BookResume</p>
+        <h2>Description</h2>
+        <p>
+            @Model.Description
+        </p>
+
+        <h2>Books Pdf</h2>
+        <p>@Model.BookPdf</p>
+
+    </article>
+</section>

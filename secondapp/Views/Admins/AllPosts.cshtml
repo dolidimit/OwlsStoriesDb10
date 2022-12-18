@@ -1,0 +1,61 @@
+﻿@model AdminQueryModel
+
+@{
+    ViewData["Title"] = "Admin All Posts";
+}
+
+
+<section class="sec9">
+    <table id="customers">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            @foreach (var item in Model.Posts)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.PostTopic</td>
+
+                    <td><a smooth="true" asp-controller="Posts" asp-action="Edit" asp-route-id="@item.Id" class="editbtn">Edit</a></td>
+                    <td>
+                        <a smooth="true" asp-controller="Posts" asp-action="Delete" asp-route-id="@item.Id"
+                           class="delbtn" onClick="return confirm('Please, confirm the delete call.');">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    @{
+        var prevpage = Model.CurrentPage - 1;
+
+        if (prevpage < 1)
+        {
+            prevpage = 1;
+        }
+
+        var maxpag = Math.Ceiling((double)Model.TotalPosts / AdminQueryModel.ItemsPerPage);
+    }
+</section>
+
+
+<div class="row pagiion">
+    <div class="col-md-6">
+        <a class="btn btn-info  @(Model.CurrentPage == 1 ? "disabled" : string.Empty)"
+           asp-controller="Admins"
+           asp-action="AllPosts"
+           asp-route-currentPage="@prevpage"
+           >|<</a>
+    </div>
+    <div class="col-md-6">
+        <a class="btn btn-info  @(Model.CurrentPage == maxpag  ? "disabled" : string.Empty)"
+           asp-controller="Admins"
+           asp-action="AllPosts"
+           asp-route-currentPage="@(Model.CurrentPage + 1)"
+          >>|</a>
+    </div>
+
+</div>

@@ -1,0 +1,22 @@
+﻿@model AdminStoryServiceModel
+
+@{
+    ViewData["Title"] = "Details Admin Story";
+}
+
+ <section class="sec8">
+      <article class="storyinfa">
+          <h2>Title</h2>
+          <p>@Model.Title</p>
+          <h2>Genre</h2>
+          <p>@Model.Genre</p>
+          <h2>Topic</h2>
+          <p>@Model.Topic</p>
+          <h2>Author</h2>
+          <p>@Model.Pseudonym</p>
+          <h2>Story</h2>
+          <p>
+              @Model.StoryText
+          </p>
+      </article>
+    </section>

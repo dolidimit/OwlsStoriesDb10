@@ -1,0 +1,100 @@
+﻿@model AllQueryBooksModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="section1">
+    <hr />
+    <article class="bookarti">
+        <img src="/images/favpng_rubbish-bins-waste-paper-baskets-recycling-bin-recycling-symbol.png" />
+        <div class="bubble bubble-bottom-left">
+            Recycle your organic,
+            plastic, paper, metal, bulbs, e-waste, glass, battery...
+        </div>
+    </article>
+    <article class="arttext">
+        <h1>Welcome to Owl's stories!</h1>
+
+        <h2>Story By Austin Boier</h2>
+
+        As I spent a lot of time watching the walk, I realized that there
+        was also a manager’s style of attire, of speaking, of behavior.
+        <p>
+            It
+            wasn’t enough that I was good at my job and had the experience. I had to look as if I was better than anyone else. It wasn’t
+            just a walk—it was an entire makeover. And gradually, as I
+            watched, I noticed that what newspaper was read was important, as was what pen was used, how you wrote, how you
+            talked to colleagues, what you said at meetings—everything,
+            in fact, was being judged, evaluated, acted upon. It wasn’t
+            enough to be able to do the job. If you wanted to get on, you
+            had to be seen to be the Right Type.
+        </p>
+    </article>
+    <article class="arttext2">
+        <h1>Owl's Stories Cause</h1>
+        <h1>Protect the Nature!</h1>
+        <p>
+            <h1>How many trees are cut for a book?</h1>
+            Noted environmentalist Suresh Heblikar says the use of 50,000 pages (paper) would have meant chopping of nearly 100 trees.
+
+            We lose three billion trees every year for paper packaging. This breaks down to: 250,000,000 trees cut down every month.
+        </p>
+    </article>
+    @* <aside>
+            <img src="images/facebook.png"/>
+            <img src="/images/gmail (1).png"/>
+            <img src="/images/instagram.png"/>
+            <img src="/images/whatsapp.png"/>
+            <img src="/images/pinterest.png"/>
+        </aside>*@
+</div>
+
+
+
+<!--<div class="bottohom">
+    <div class="containeryu6">-->
+<!--Area of the images-->
+<!--<div class="wrapperio8">
+        <img src="https://static01.nyt.com/images/2020/11/20/books/00BESTBOOKS-COMBO/00BESTBOOKS-COMBO-superJumbo.jpg">
+        <img src="https://cdn.theatlantic.com/thumbor/OjR2KNOSKOhxssl_KSdaKbHNqQc=/0x104:2000x1229/960x540/media/img/mt/2016/12/Best_Books_Read/original.jpg">
+        <img src="https://ebookfriendly.com/wp-content/uploads/2022/01/Best-books-for-iPad-in-2022.jpg">
+        <img src="https://assets.vogue.com/photos/61b8ec5c8dfa948c34e89029/master/pass/00_story.jpg">
+        <img src="https://parade.com/.image/t_share/MTkwNTgxNDMzNDI1MzQwMjg0/best-books-of-2021.jpg">
+        <img src="https://legacynyplorg-live.s3.amazonaws.com/s3fs-public/adult_blogs.jpg">
+        <img src="https://assets-global.website-files.com/5ad4b5ac3265e94b4f4625ea/629e1b59bc84150f34e0c4c7_Top-Marketing-Agency-Books1_6c7066e6e668a06607e75657942d4885_2000.jpeg">
+    </div>
+
+</div>-->
+<div class="row sec20">
+
+    @foreach (var st in Model.Books)
+    {
+    <a smooth="true" asp-controller="Books" asp-action="DetailsUser" asp-route-id="@st.Id" >
+        <article class="storypage">
+            <article>
+                <h1>@st.Title</h1>
+                <img src="@st.ImageUrl" />
+            </article>
+            <article class="btnslist2">
+                <a smooth="true" asp-controller="Books" asp-action="DetailsUser" asp-route-id="@st.Id" class="btndet20">Details</a>
+
+            </article>
+        </article>
+    </a>
+
+
+    }
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+

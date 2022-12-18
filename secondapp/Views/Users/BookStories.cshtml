@@ -1,0 +1,76 @@
+﻿@model AllQueryUsersModel
+
+@{
+    ViewData["Title"] = "Book Stories";
+}
+
+
+<div class="row sec15er">
+
+
+
+    @if (!Model.BookStories.Any())
+    {
+        <h2 class="titlepost">You have no stories yet.</h2>
+    }
+    else
+    {
+       
+        @foreach (var sto in Model.BookStories)
+        {
+
+            <a smooth="true" asp-controller="Stories" asp-action="Edit" asp-route-id="@sto.Id" onClick="return confirm('Please, confirm the edit call.');">
+                <article class="arts15">
+                    <h1>@sto.Title</h1>
+                    <p>@sto.StoryText</p>
+                    
+                </article>
+
+            </a>
+        }
+
+
+        <article class="bookaff">
+            <a smooth="true" asp-area="" asp-controller="Stories" asp-action="SendUsersBook" class="btndetsts19"
+               onClick="return confirm('If you send your Collection of Stories to us for approval,all of them will be taken by us and deleted from your Your Stories page.');">Send Your Book</a>
+            <h2 class="titlepost">You need at least 30 stories to send your book for approval.</h2>
+        </article>
+
+    }
+
+
+    @{
+        var prevpage = Model.CurrentPage - 1;
+
+        if (prevpage < 1)
+        {
+            prevpage = 1;
+        }
+
+        var maxpag = Math.Ceiling((double)Model.TotalBookStories / AllQueryUsersModel.StoriesPerBookPage);
+    }
+
+</div>
+
+
+<div class="row pagiion">
+    <div class="col-md-6">
+        <a class="btn btn-info  @(Model.CurrentPage == 1 ? "disabled" : string.Empty)"
+           asp-controller="Users"
+           asp-action="BookStories"
+           asp-route-currentPage="@prevpage"
+           >|<</a>
+
+    </div>
+    <div class="col-md-6">
+        <a class="btn btn-info  @(Model.CurrentPage == maxpag  ? "disabled" : string.Empty)"
+           asp-controller="Users"
+           asp-action="BookStories"
+           asp-route-currentPage="@(Model.CurrentPage + 1)"
+           >>|</a>
+
+    </div>
+
+</div>
+
+

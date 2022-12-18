@@ -1,0 +1,53 @@
+﻿@model FavouritesServiceModel
+
+@{
+    ViewData["Title"] = "Details Favourite Story";
+}
+
+<section class="sec8">
+    <div class="backbt">
+        <a smooth="true" href="javascript:history.back()"><i class="fa-solid fa-x"></i></a>
+    </div>
+    <article class="information">
+        <article class="imgcon">
+            @if (Model.FavImgUrl == null)
+            {
+                <img src="/images/580b57fbd9996e24bc43bb62.png" />
+            }
+            else
+            {
+                <img src=@Model.FavImgUrl />
+            } 
+        </article>
+        <article class="infti">
+            <h2>Title</h2>
+            <p>@Model.FavTitle</p>
+            <h2>Topic</h2>
+            <p>@Model.FavTopic</p>
+            <h2>Author</h2>
+            <p>@Model.FavUserAuthor</p>
+
+            @if (Model.FavPages > 0)
+            {
+                <h2>Pages</h2>
+                <p>@Model.FavPages</p>
+                <h2>Purchase Link</h2>
+                <p><h3 class="booklink"><a href=@Model.FavBookLink target="_blank">Purchase Book From here</a></h3></p>
+            }
+
+        </article>
+        @if (Model.FavPages > 0)
+        {
+
+            <a class="btndowlabook" href="@Model.FavBookPdf" target="_blank">Download Book</a>
+
+        }
+    </article>
+    <article class="storyinf">
+        <h2>@Model.FavTitle</h2>
+        <p>
+            @Model.FavCon
+        </p>
+    </article>
+</section>
+

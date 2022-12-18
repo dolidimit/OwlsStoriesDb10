@@ -1,0 +1,45 @@
+﻿@model EventsServiceModel
+
+@{
+    ViewData["Title"] = "Details Event User";
+}
+
+<div class="sec16">
+    <article class="armain1s16">
+        <article class="artnes1s16">
+
+            <article class="artiimgtitl">
+                <img src=@Model.GuestAuthorImage />
+                <artcle class="arttitles">
+                    <h3>Author: @Model.GuestAuthor</h3>
+                    <h3>Book: @Model.Title</h3>
+                    <h3>Published Date: @Model.Date</h3>
+                    <h3>Available Books: @Model.BookStock</h3>
+                    <h3>Start Time: @Model.StartTime</h3>
+                    <h3>End Time: @Model.EndTime</h3>
+                </artcle>
+
+            </article>
+            <artcle class="artdescr2">
+                <artcle class="bookimgtitl">
+                    <h3>@Model.SubTitle</h3>
+                    <img src=@Model.ImageUrl />
+                    <article class="eventstitlear2">
+                        <h4>Event Date: @Model.Date</h4>
+                        <h4>Address: @Model.Address</h4>
+                        <h4>Start Time: @Model.StartTime</h4>
+                        <h4>End Time: @Model.EndTime</h4>
+                    </article>
+                </artcle>
+                <article class="art2parres">
+                    <h3>Resume</h3>
+                    <p>@Model.BookResume</p>
+                </article>
+
+            </artcle>
+
+        </article>
+
+    </article>
+   
+</div>

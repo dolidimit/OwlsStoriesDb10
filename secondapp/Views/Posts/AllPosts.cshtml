@@ -1,0 +1,90 @@
+﻿@model AllQueryPostsModel
+@using System.Security.Claims;
+
+
+
+@{
+    ViewData["Title"] = "All Posts";
+}
+
+
+
+<div class="row sec13c">
+    <form method="GET" class="searchtiom">
+        <div>
+            <label asp-for="SearchTerm"></label>
+            <input asp-for="SearchTerm" />
+        </div>
+
+    </form>
+    <p class="sec13ptitle">Welcome to Owl's Blog! Share your opinion with the community.</p>
+
+    @foreach (var sto in Model.Posts)
+    {
+
+        <article lass="art1s13">
+            <article class="comms13">
+                <article class="toprowscom">
+                    <h5>Topic: @sto.PostTopic</h5>
+                    <h5>Date: @sto.PCurrentTime</h5>
+                    <h5>email: @sto.UserEmailC</h5>
+
+                </article>
+                <article class="bottomcom">
+                    <p>
+                        @sto.PostContent
+                    </p>
+                </article>
+
+            </article>
+        </article>
+
+
+
+    }
+
+    <artcle class="addcomns13">
+        <article class="addbtnartc">
+            <p>email: @this.User.FindFirst(ClaimTypes.Email).Value</p>
+            <artcle>
+                <a smooth="true" asp-controller="Posts" asp-action="AddPost" class="addbtns13">Post</a>
+                <article class="addbtnartc">
+                    <a smooth="true" asp-controller="Posts" asp-action="UsersPosts" class="addbtns13ch">Your History</a>
+                </article>
+
+            </artcle>
+
+        </article>
+    </artcle>
+
+    @{
+        var prevpage = Model.CurrentPage - 1;
+
+        if (prevpage < 1)
+        {
+            prevpage = 1;
+        }
+
+        var maxpag = Math.Ceiling((double)Model.TotalPosts / AllQueryPostsModel.PostsPerPage);
+    }
+
+
+</div>
+
+<div class="row pagiion">
+    <div class="col-md-6">
+        <a class="btn btn-info  @(Model.CurrentPage == 1 ? "disabled" : string.Empty)"
+           asp-controller="Posts"
+           asp-action="AllPosts"
+           asp-route-currentPage="@prevpage"
+           asp-route-searchTerm="@(Model.SearchTerm)">|<</a>
+    </div>
+    <div class="col-md-6">
+        <a class="btn btn-info  @(Model.CurrentPage == maxpag  ? "disabled" : string.Empty)"
+           asp-controller="Posts"
+           asp-action="AllPosts"
+           asp-route-currentPage="@(Model.CurrentPage + 1)"
+           asp-route-searchTerm="@(Model.SearchTerm)">>|</a>
+    </div>
+
+</div>

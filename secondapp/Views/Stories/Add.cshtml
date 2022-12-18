@@ -1,0 +1,16 @@
+﻿@model AddStoryFormModel
+
+@{
+    ViewData["Title"] = "Add Story";
+}
+
+<div class="row sec4">
+    <div class="col-sm-12 offset-lg-2 col-lg-8 offset-xl-3 col-xl-6 addstory">
+     <form method="post">
+                    <h1>Add your story</h1>
+                     <partial name="_StoryFormPartial" model="@Model"/>
+
+                       <input class="btnadd" type="submit" value="Add"/>
+                </form>      
+    </div>
+</div>

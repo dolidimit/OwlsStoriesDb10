@@ -1,0 +1,16 @@
+﻿@model AddPostFormModel
+
+@{
+    ViewData["Title"] = "Edit Post";
+}
+
+<div class="row sec14">
+    <div class="col-sm-12 addpostform">
+        <form method="post">
+            <h1>Admin Edit Post</h1>
+            <partial name="_PostFormPartial" model="@Model" />
+
+            <input class="btnaddpost" type="submit" value="Edit" />
+        </form>
+    </div>
+</div>

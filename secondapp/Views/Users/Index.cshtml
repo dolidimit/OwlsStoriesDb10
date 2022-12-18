@@ -1,0 +1,109 @@
+﻿@model AllQueryUsersModel
+@using System.Security.Claims;
+
+@{
+    ViewData["Title"] = "Users Page";
+}
+
+
+<div class="row sec19">
+
+    <article class="artmains19">
+        <article class="artimgtop">
+            <article class="artimgcus">
+                <article class="imgartcuseimg">
+                    <img src="https://openclipart.org/image/800px/247320" />
+                    
+                    <artcle class="arttitl3">
+                        <h3>Users's Stories Number: @Model.UsersStories.Count()</h3>
+                        <h3>Users's Posts Number: @Model.UsersPosts.Count()</h3>
+                        <h3>Users's Favourites Number: @Model.UsersFavourites.Count()</h3>
+
+                    </artcle>
+
+                </article>
+
+                <artcle class="artinfortit">
+                    <h4>User's Email: @this.User.FindFirst(ClaimTypes.Email).Value</h4>
+                    <h4>Your Stories: <a smooth="true" asp-area="" asp-controller="Stories" asp-action="AllMine" class="btnbook">Stories</a></h4>
+                    <h4>Your Book: <a smooth="true" asp-area="" asp-controller="Users" asp-action="BookStories" class="btnbook">Collection</a></h4>
+                    <h4>Your Blog History: <a smooth="true" asp-area="" asp-controller="Posts" asp-action="UsersPosts" class="btnbook">Blog History</a></h4>
+                    <h4>Your Favourites: <a smooth="true" asp-area="" asp-controller="Favourites" asp-action="All" class="btnbook">Favourites</a></h4>
+                </artcle>
+
+
+            </article>
+            <article class="artimgtres">
+                <img src="/images/2cd43b_d846e73021bf4e44ae0f129c3a205677_mv2.png" />
+                <h5>Planted Trees: @(Model.UsersStories.Count()/5)</h5>
+                <p>For every 5 stories you post we plant a tree in our residence in  Amazon rainforest, Amazon jungle.</p>
+            </article>
+        </article>
+
+        <artcle class="storieslast">
+            @if (!Model.UsersStories.Any())
+            {
+                <h2 class="titlepost">You have no stories yet.</h2>
+            }
+            else
+            {
+                @foreach (var sto in Model.UsersStories.Take(5))
+                {
+        <a smooth="true" asp-controller="Stories" asp-action="Details" asp-route-id="@sto.Id">
+            <article class="storypage">
+                <article class="contentpage">
+                    <h1>@sto.Title</h1>
+                    <p class="cut-text">@sto.StoryText</p>
+                </article>
+                <article class="btnslist">
+                    <button class="btndet"><a smooth="true" asp-controller="Stories" asp-action="Details" asp-route-id="@sto.Id">Details</a></button>
+
+
+                </article>
+            </article>
+   
+        </a>
+                }
+            }
+
+
+
+</article>
+    <article>
+        <article class="artparart19">
+            @if (!Model.UsersPosts.Any())
+            {
+                <h2 class="titlepost">You have no posts yet.</h2>
+            }
+            else
+            {
+                @foreach (var sto in Model.UsersPosts.Take(2))
+                {
+
+                    <article lass="art1s13">
+                        <article class="comms13">
+                            <article class="toprowscom">
+                                <h5>Topic: @sto.PostTopic</h5>
+                                <h5>Date: @sto.PCurrentTime</h5>
+                                <h5>email: @sto.UserEmailC</h5>
+
+                            </article>
+                            <article class="bottomcom">
+                                <p>
+                                    @sto.PostContent
+                                </p>
+                            </article>
+
+                        </article>
+                    </article>
+                }
+            }
+
+
+
+        </article>
+        <a smooth="true" asp-area="" asp-controller="Posts" asp-action="UsersPosts" class="btndetsts19">View Your Posts History</a>
+    </article>
+
+
+</div>
