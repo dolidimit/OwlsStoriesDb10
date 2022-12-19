@@ -8,13 +8,7 @@
 
 
 <div class="row sec13ce">
-    <form method="GET" class="searchtiom">
-        <div>
-            <label asp-for="SearchTerm"></label>
-            <input asp-for="SearchTerm" />
-        </div>
-
-    </form>
+    
     <p class="sec13ptitle">Welcome to the History Page of your posts.</p>
 
     @if (!Model.Posts.Any())
@@ -79,14 +73,14 @@
     <div class="col-md-6">
         <a class="btn btn-info  @(Model.CurrentPage == 1 ? "disabled" : string.Empty)"
            asp-controller="Posts"
-           asp-action="UserPosts"
+           asp-action="UsersPosts"
            asp-route-currentPage="@prevpage"
            asp-route-searchTerm="@(Model.SearchTerm)">|<</a>
     </div>
     <div class="col-md-6">
         <a class="btn btn-info  @(Model.CurrentPage == maxpag  ? "disabled" : string.Empty)"
            asp-controller="Posts"
-           asp-action="UserPosts"
+           asp-action="UsersPosts"
            asp-route-currentPage="@(Model.CurrentPage + 1)"
            asp-route-searchTerm="@(Model.SearchTerm)">>|</a>
     </div>
