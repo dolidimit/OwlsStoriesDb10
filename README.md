@@ -52,4 +52,17 @@ Logged in users can:
 
 •	View their profile page 
 
+The Admin can:
+
+•	Edit and delete the users story data
+
+•	Add Books 
+
+•	Edit and delete the books data
+
+• Add Events
+
+•	Edit and delete the events data
+
+•	Edit and delete the users post data
 
