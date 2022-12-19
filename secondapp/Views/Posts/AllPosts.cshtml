@@ -13,28 +13,38 @@
     
     <p class="sec13ptitle">Welcome to Owl's Blog! Share your opinion with the community.</p>
 
-    @foreach (var sto in Model.Posts)
+    @if (!Model.Posts.Any())
     {
+        <h2 class="titlepost">
 
-        <article lass="art1s13">
-            <article class="comms13">
-                <article class="toprowscom">
-                    <h5>Topic: @sto.PostTopic</h5>
-                    <h5>Date: @sto.PCurrentTime</h5>
-                    <h5>email: @sto.UserEmailC</h5>
+            There are no posts yet.
+        </h2>
+    }
+    else
+    {
+        @foreach (var sto in Model.Posts)
+        {
+
+            <article lass="art1s13">
+                <article class="comms13">
+                    <article class="toprowscom">
+                        <h5>Topic: @sto.PostTopic</h5>
+                        <h5>Date: @sto.PCurrentTime</h5>
+                        <h5>email: @sto.UserEmailC</h5>
+
+                    </article>
+                    <article class="bottomcom">
+                        <p>
+                            @sto.PostContent
+                        </p>
+                    </article>
 
                 </article>
-                <article class="bottomcom">
-                    <p>
-                        @sto.PostContent
-                    </p>
-                </article>
-
             </article>
-        </article>
 
 
 
+        }
     }
 
     <artcle class="addcomns13">
