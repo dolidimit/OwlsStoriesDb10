@@ -94,7 +94,7 @@ namespace secondapp.Services.Posts
         public PostQueryServiceModel UsersPosts(int currentpage, int storiesper, string userId)
         {
 
-            var postquery = this.data.Posts.AsQueryable();
+            var postquery = this.data.Posts..Where(x => x.UserId == userId).AsQueryable();
 
             var totstor = postquery.Count();
 
@@ -121,7 +121,6 @@ namespace secondapp.Services.Posts
             {
                 TotalPosts = totstor,
                 CurrentPage = currentpage,
-                PostsPerPage = storiesper,
                 Posts = data,
             };
 
