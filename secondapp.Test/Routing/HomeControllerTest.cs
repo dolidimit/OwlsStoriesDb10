@@ -1,7 +1,6 @@
 ﻿using MyTested.AspNetCore.Mvc;
 using secondapp.Controllers;
 using secondapp.Models.Books;
-using static secondapp.Test.Data.Books;
 using System;
 using System.Collections.Generic;
 using System.Linq;
