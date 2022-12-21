@@ -17,34 +17,46 @@
     </form>
 
 
-    @foreach (var sto in Model.Stories)
+    @if (!Model.Stories.Any())
     {
-        <a smooth="true" asp-controller="Admins" asp-action="DetailsStoryUser" asp-route-id="@sto.Id" class="wraplink">
-            <article class="storypage">
-                <article class="contentpage">
-                    <h1>@sto.Title</h1>
-                    <p class="cut-text">
-                        @sto.StoryText
-                    </p>
-                </article>
-                <article class="btnslist2">
+        <h2 class="titlepost">
 
-                 
+            There are no stories yet.
+        </h2>
+    }
+    else
+    {
+        @foreach (var sto in Model.Stories)
+        {
+            <a smooth="true" asp-controller="Admins" asp-action="DetailsStoryUser" asp-route-id="@sto.Id" class="wraplink">
+                <article class="storypage">
+                    <article class="contentpage">
+                        <h1>@sto.Title</h1>
+                        <p class="cut-text">
+                            @sto.StoryText
+                        </p>
+                    </article>
+                    <article class="btnslist2">
+
+
                         <a smooth="true" asp-controller="Admins" asp-action="DetailsStoryUser" asp-route-id="@sto.Id" class="btndet">Details</a>
                         <article class="btnfavbtn">
                             <form method="post">
                                 <input smooth="true" asp-controller="Favourites" asp-action="Save" asp-route-id="@sto.Id" type="submit" value="Save" class="btnfav">
                             </form>
                         </article>
-                    
 
 
 
+
+                    </article>
                 </article>
-            </article>
 
-        </a>
+            </a>
+        }
+
     }
+
 
     @{
         var prevpage = Model.CurrentPage - 1;
