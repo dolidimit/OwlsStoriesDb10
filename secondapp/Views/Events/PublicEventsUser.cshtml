@@ -59,13 +59,13 @@
     <div class="col-md-6">
         <a class="btn btn-info  @(Model.CurrentPage == 1 ? "disabled" : string.Empty)"
            asp-controller="Events"
-           asp-action="PublicEvents"
+           asp-action="PublicEventsUser"
            asp-route-currentPage="@prevpage">|<</a>
     </div>
     <div class="col-md-6">
         <a class="btn btn-info  @(Model.CurrentPage == maxpag  ? "disabled" : string.Empty)"
            asp-controller="Events"
-           asp-action="PublicEvents"
+           asp-action="PublicEventsUser"
            asp-route-currentPage="@(Model.CurrentPage + 1)">>|</a>
     </div>
 
