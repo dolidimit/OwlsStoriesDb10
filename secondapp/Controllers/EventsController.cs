@@ -224,7 +224,7 @@ namespace secondapp.Controllers
 
             this.datas.SendEvent(id, userid);
 
-            return RedirectToAction(nameof(PublicEvents));
+            return RedirectToAction(nameof(PublicEventsUser));
         }
 
 
